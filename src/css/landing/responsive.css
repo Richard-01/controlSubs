@@ -1,0 +1,87 @@
+@media (max-width: 576px){
+    .s_mockup {
+        width: auto;
+    }
+    .s_logos-img {
+        flex-direction: column;
+    }
+    .s_section {
+        padding: 64px 0;
+    }
+    .s_description {
+        width: 100%;
+        min-width: 100%;
+    }
+    .s_container {
+        width: 91.8%;
+    }
+    .s_title {
+        margin-bottom: 16px;
+        letter-spacing: -.72px;
+        font-size: 36px;
+        line-height: 44px;
+        font-weight: 600;
+    }
+    .s_subtitle {
+        margin-bottom: 32px;
+        letter-spacing: -.72px;
+        font-size: 18px;
+        line-height: 28px;
+        font-weight: 400;
+        color: #3e3d40;
+    }
+    .s_screens-iphone-one {
+        display: none;
+    }
+    .s_price-title {
+        font-size: 30px;
+        line-height: 38px;
+        font-weight: 600;
+        color: #101828;
+    }
+    .s_price-subtitle {
+        font-size: 18px;
+        line-height: 28px;
+        font-weight: 400;
+        color: #667085;
+    }
+    .s_footer-container {
+        gap: 10px;
+        height: auto;
+        padding: 20px 0;
+        flex-direction: column;
+    }
+}    
+
+@media (max-width: 1024px){
+    .s_logos-img {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .s_container {
+        width: 95.8%;
+    }
+    .s_content {
+        padding: 0;
+        flex-direction: column;
+    }
+    .s_price-text {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    .s_price-plans {
+        flex-direction: column;
+        margin-top: 60px;
+    }
+    .s_price-card {
+        max-width: 380px;
+        min-height: 600px;
+    }
+}
+
+

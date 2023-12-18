@@ -1,0 +1,300 @@
+@import url(../style.css);
+@import url(./animation.css);
+@import url(./responsive.css);
+
+:root {
+    --animate-duration: 1s;
+    --animate-delay: 1s;
+    --animate-repeat: 1
+}
+img {
+    border-style: none;
+    user-select: none;
+}
+.s_header {
+    gap: 64px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    border-top: 1px solid #4d75b0;
+    background-color: rgb(246, 246, 246);
+}
+.s_header-container {
+    height: 80px;
+    width: 100%;
+    padding: 0 80px;
+    max-width: 1417px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.subs{
+    width: 100%;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+}
+.s_container {
+    width: 91.11%;
+    padding-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+.s_section {
+    gap: 32px;
+    width: 100%;
+    padding: 96px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.s_content {
+    gap: 64px;
+    width: 100%;
+    padding: 0 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.s_mockup {
+    width: 512px;
+    max-width: 512px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.s_title {
+    height: auto;
+    padding-bottom: 44px;
+    letter-spacing: -1.2px;
+    background: linear-gradient(to right,#000000,#000000);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 50px;
+    line-height: 62px;
+    font-weight: 600;
+}
+.s_subtitle{
+    margin-bottom: 48px;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #3e3d40;
+}
+.s_logos {
+    gap: 32px;
+    padding: 96px 0;
+    background: #f9fafb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.s_logos-container{
+    gap: 32px;
+    padding: 0 32px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.s_logos-label {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    color: #667085;
+}
+.s_logos-img {
+    gap: 32px;
+    padding: 0 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.s_feature {
+    gap: 24px;
+    display: flex;
+    max-width: 576px;
+    flex-direction: column;
+}
+.s_feature-item {
+    padding: 16px 0 16px 24px;
+    border-left: 4px solid  transparent;
+    border-image: linear-gradient( 347deg,
+        rgb(106 76 203) 0%,
+        rgb(239 77 175) 100% 
+    )1;
+}
+.s_feature-title {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 500;
+    color: #101828;
+}
+.s_feature-subtitle {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #667085;
+}
+.s_screens {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.s_screens-iphone-one {
+    z-index: 3;
+    margin-right: -43px;
+}
+.s_screens-iphone-two {
+    z-index: 4;
+}
+.s_divider {
+    border-bottom: 1px solid #e8e8e9;
+}
+.s_price-content {
+    padding: 0 32px;;
+}
+.s_price-text {
+    max-width: 448px;
+}
+.s_price-title {
+    margin-bottom: 16px;
+    letter-spacing: -.72px;
+    font-size: 36px;
+    line-height: 44px;
+    font-weight: 600;
+    color: #101828;
+}
+.s_price-subtitle {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+    color: #667085;
+}
+.s_price-button {
+    margin-top: 18px;
+    width: 166px;
+}
+.b_color-primary {
+    color: #fff;
+    background: linear-gradient( 270deg,
+        rgb(106 76 203) 0%,
+        rgb(239 77 175) 100% 
+    );
+    border: 1px solid #7f56d9;
+}
+.b_size-form {
+    gap: 8px;
+    height: 48px;
+    padding: 12px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 12px;
+}
+.s_price-plans {
+    gap: 32px;
+    margin-top: 80px;
+    display: flex;
+    justify-content: flex-end;
+}
+.s_price-card {
+    width: 100%;
+    padding: 32px;
+    background: #fff;
+    border-radius: 16px;
+    border: 1px solid #eaecf0;
+    box-shadow: 0 4px 6px -2px #10182808, 0 12px 16px -4px #10182814;
+}
+.s_price-popular {
+    border: 2.5px solid rgb(239 77 175);
+}
+.s_price-card-popular:hover {
+    transition: 300ms;
+    box-shadow: 0px 5px 20px 8px rgb(214, 214, 214); 
+    transform: scale(1.025);
+}
+.s_price-card-title {
+    text-align: center;
+    margin-bottom: 16px;
+    letter-spacing: -.96px;
+    font-size: 48px;
+    line-height: 68px;
+    font-weight: 600;
+    color: #101828;
+}
+.s_price-card-subtitle {
+    text-align: center;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 600;
+    color: #101828;
+}
+.s_price-card-button {
+    margin-top: 30px;
+}
+.b_color-secondary {
+    box-sizing: border-box;
+    color: #501c74;
+    background: #ffffff;
+    border: 1px solid #501c74;
+    box-shadow: 0 1px 2px #1018280d;
+}
+.s_price-card-list {
+    gap: 16px;
+    padding: 32px 0;
+    flex-direction: column;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+.b_size-form2 {
+    width: 100%;
+    min-width: auto!important;
+}
+
+.s_footer {
+    gap: 64px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    border-top: 1px solid #f2f4f7;
+}
+.s_footer-container {
+    height: 80px;
+    width: 100%;
+    padding: 0 32px;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.s_footer-title {
+    padding: 0 32px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #98989a;
+}
+.s_footer-actions {
+    gap: 18px;
+    display: flex;
+}
+
+.s_footer-actions a{
+    text-decoration: none;
+    background-color: transparent;
+}
