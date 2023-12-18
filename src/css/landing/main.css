@@ -16,7 +16,6 @@ img {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    border-top: 1px solid #4d75b0;
     background-color: rgb(246, 246, 246);
 }
 .s_header-container {
@@ -216,6 +215,13 @@ img {
     border-radius: 16px;
     border: 1px solid #eaecf0;
     box-shadow: 0 4px 6px -2px #10182808, 0 12px 16px -4px #10182814;
+    transition: 300ms;
+}
+.s_price-card:hover {
+    border: 2.5px solid rgb(239 77 175);
+    transition: 300ms;
+    box-shadow: 0px 5px 20px 8px rgb(214, 214, 214); 
+    transform: scale(1.025);
 }
 .s_price-popular {
     border: 2.5px solid rgb(239 77 175);
@@ -250,6 +256,16 @@ img {
     background: #ffffff;
     border: 1px solid #501c74;
     box-shadow: 0 1px 2px #1018280d;
+    transition: 500ms;
+}
+.b_color-secondary:hover {
+    transition: 500ms;
+    color: #fff;
+    background: linear-gradient( 270deg,
+        rgb(106 76 203) 0%,
+        rgb(239 77 175) 100% 
+    );
+    border: 1px solid #7f56d9;
 }
 .s_price-card-list {
     gap: 16px;
@@ -288,13 +304,15 @@ img {
     line-height: 24px;
     font-weight: 400;
     color: #98989a;
+    user-select: none;
 }
 .s_footer-actions {
     gap: 18px;
     display: flex;
 }
-
 .s_footer-actions a{
     text-decoration: none;
     background-color: transparent;
+    color: rgb(106 76 203);
+    font-weight: bold;
 }
