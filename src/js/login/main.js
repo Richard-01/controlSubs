@@ -9,7 +9,8 @@ const d = document,
     nombre = d.getElementById('nombre'),
     correo = d.getElementById('correo'),
     contrasena = d.getElementById('contrasena'),
-    cambio = d.getElementById('cambio')
+    cambio = d.getElementById('cambio'),
+    volver = d.getElementById('volver')
 
 cambio.addEventListener("click", () => {
     if ( cambio.textContent == "Crear cuenta" ) {
@@ -31,6 +32,10 @@ cambio.addEventListener("click", () => {
         btnPrincipal.textContent = "Iniciar sesion";
         cuenta.textContent = "No tienes una cuenta?";
     }
+});
+
+volver.addEventListener("click", () => {
+    window.location = "../../index.html";
 });
 
 btnPrincipal.addEventListener("click", async () => {
