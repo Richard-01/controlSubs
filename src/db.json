@@ -42,5 +42,11 @@
         "plan": "plus",
         "id": "749f"
       }
+    ],
+    "plataformas": [
+      {
+        "id":1,
+        "nombre": "Netfix"
+      }
     ]
-  }
+}

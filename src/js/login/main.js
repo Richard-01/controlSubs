@@ -10,7 +10,8 @@ const d = document,
     correo = d.getElementById('correo'),
     contrasena = d.getElementById('contrasena'),
     cambio = d.getElementById('cambio'),
-    volver = d.getElementById('volver')
+    volver = d.getElementById('volver'),
+    alert = d.getElementById('alert')
 
 cambio.addEventListener("click", () => {
     if ( cambio.textContent == "Crear cuenta" ) {
@@ -38,10 +39,21 @@ volver.addEventListener("click", () => {
     window.location = "../../index.html";
 });
 
+const text = (txt) => {
+    alert.setAttribute("hidden", true);
+    alert.firstElementChild.firstElementChild.firstElementChild.textContent = txt;
+    alert.addEventListener("click", () => {
+        window.location.reload();
+    });
+}
+
+alert.addEventListener("click", text );
+
 btnPrincipal.addEventListener("click", async () => {
     if ( btnPrincipal.textContent === "Iniciar sesion" ) {
         if ( correo.value === "" || contrasena.value === "" ) {
-            alert("Debes rellenar todos los campos");
+            text("Debes rellenar todos los campos");
+            alert.removeAttribute("hidden");
         } else  {
                 try {
                     let res = await fetch("http://localhost:3000/usuarios/"),
@@ -59,7 +71,8 @@ btnPrincipal.addEventListener("click", async () => {
                     if ( userVerified == true ) {
                         window.location = "inicio.html";
                     } else {
-                        alert("Usuario o contraseña incorrectos");
+                        text("Usuario o contraseña incorrectos");
+                        alert.removeAttribute("hidden");
                     }
 
 
@@ -69,16 +82,20 @@ btnPrincipal.addEventListener("click", async () => {
             }
         } else {
         if ( nombre.value === "" || correo.value === "" || contrasena.value === "" ) {
-            alert("Debes rellenar todos los campos");
+            text("Debes rellenar todos los campos");
+            alert.removeAttribute("hidden");
         } else {
             if ( correo.value.length < 5 || contrasena.value.length < 5 ) {
-                alert("El usuario y la contraseña deben tener mas de 5 caracteres");
+                text("El usuario y la contraseña deben tener mas de 5 caracteres");
+                alert.removeAttribute("hidden");
             } else {
                 if ( !correo.value.includes("@") ) {
-                    alert("El correo ingresado no es valido, debe contener '@'");
+                    text("El correo ingresado no es valido, debe contener '@'");
+                    alert.removeAttribute("hidden");
                 } else {
                     if ( nombre.value.length < 2 ) {
-                        alert("El nombre no puede estar vacio");
+                        text("El nombre no puede estar vacio");
+                        alert.removeAttribute("hidden");
                     } else {
                         try {
                             let res = await fetch("http://localhost:3000/usuarios/"),
@@ -93,7 +110,8 @@ btnPrincipal.addEventListener("click", async () => {
                             }
 
                             if ( correoUse === true ) {
-                                alert("El correo ingresado ya esta en uso");
+                                text("El correo ingresado ya esta en uso");
+                                alert.removeAttribute("hidden");
                             } else {
                                 let options = {
                                     method: "POST",

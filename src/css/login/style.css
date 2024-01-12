@@ -26,6 +26,54 @@ a {
     color: white;
 }
 
+.span-alert {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+}
+
+.cont-alert {
+    width: 100%;
+    height: 100vh;
+    backdrop-filter: blur(2px);
+    display: flex;
+    justify-content: center;
+}
+
+.card-alert {
+    width: 25%;
+    height: 30%;
+    background-color: white;
+    box-shadow: 0 0 20px var(--morado);
+    margin-top: 50px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.card-alert h2 {
+    width: 95%;
+}
+
+.btn-alert {
+    padding: 10px;
+    width: 30%;
+    border: none;
+    background-color: var(--morado);
+    color: white;
+    font-size: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 400ms;
+}
+
+.btn-alert:hover {
+    transform: scale(1.1);
+}
+
 body {
     background: linear-gradient(rgb(255, 255, 255), rgb(190, 172, 252));
     width: 100%;
@@ -101,7 +149,7 @@ main {
 }
 
 .mano {
-    font-size: 40px;
+    font-size: 35px;
 }
 
 .txt-cont p {
@@ -182,7 +230,32 @@ form {
     color: red;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    main, .cont-form, .footer-login {
+        height: 70%;
+    }
+    .cont-titulo h3 {
+        font-size: 28px;
+    }
+    .mano {
+        font-size: 28px;
+    }
+
+    .img-cont {
+        margin-top: 80px;
+    }
+    .card-alert {
+        width: 40%;
+        height: 30%;
+    }
+}
+
 @media screen and (max-width: 768px) {
+
+    .card-alert {
+        width: 80%;
+        height: 30%;
+    }
 
     .morado {
         color: var(--morado);
