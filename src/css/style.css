@@ -6,4 +6,11 @@
     user-select: none;
 }
 
+a {
+  text-decoration: none;
+}
 
+:root {
+  --morado: rgb(106 76 203);
+  --color-inputs: #C6C6C6;
+}

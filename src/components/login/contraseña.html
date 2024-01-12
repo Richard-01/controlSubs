@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/login/contraseña.css">
+    <title>Olvide mi contraseña</title>
+</head>
+<body>
+
+    <span id="alert" class="span-alert" hidden>
+        <div class="cont-alert">
+            <div class="card-alert">
+                <h2>Error en la autentificacion</h2>
+                <button class="btn-alert">Cerrar</button>
+            </div>
+        </div>
+    </span>
+
+    <main>
+        <section class="sect-form">
+            <h2>Recupera tu contraseña</h2>
+            <form action="">
+                <div class="cont-input">
+                    <div class="cont-label">
+                        <img src="../../img/login/nombre.png" alt="">
+                        <label for="">Nombre:</label>
+                    </div>
+                    <input id="nombre" type="text" placeholder="Ingresa tu correo" autocomplete="off">
+                </div>
+                <div class="cont-input">
+                    <div class="cont-label">
+                        <img src="../../img/login/correo.png" alt="">
+                        <label for="">Correo:</label>
+                    </div>
+                    <input id="correo" type="text" placeholder="Ingresa tu correo" autocomplete="off">
+                </div>
+            </form>
+            <button id="btn-submit">Validar</button>
+        </section>
+        <section id="sect-id" class="sect-img">
+            <img src="../../img/login/Login-rafiki.svg" alt="">
+        </section>
+    </main> 
+
+    <script src="../../js/login/contraseña.js"></script>
+
+</body>
+</html>
