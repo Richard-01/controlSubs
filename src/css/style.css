@@ -13,4 +13,12 @@ a {
 :root {
   --morado: rgb(106 76 203);
   --color-inputs: #C6C6C6;
+/*---------colors dark-mode and sidebar----------*/
+  --primary-color: #0E4BF1;
+  --color-panel: #FFF;
+  --text-color: #000;
+  --black-light: #707070;
+  --border-color: #E6E5E5;
+  --toggle-color: #DDD;
+  --title-icon-color: #FFF;
 }
