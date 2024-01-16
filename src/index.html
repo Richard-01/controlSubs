@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css" async>
     <link rel="stylesheet" href="css/landing/main.css" async>
-    <title>control Subs!</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <title>SubSphere!</title>
 </head>
 
 <body>
     <header class="s_header">
         <div class="s_header-container">
             <div class="s_logo">
-                <img src="./img/landing/Company-Twitch.svg" alt="Logo" width="120" height="48">
+                <img class="logo" src="./img/go.png" alt="Logo">
             </div>
             <div class="user-icon">
                 <a href="components/login/index.html">
@@ -35,10 +36,7 @@
                             rgb(255 0 154) 100%
                           );"> Suscripciones </span>
                         </h1>
-                        <h2 class="s_subtitle animate__animated animate__fadeInDown">Lorem ipsum, dolor sit    amet
-                            consectetur ... rerum distinctio aspernatur dicta eius eos cumque.
-                            Architecto dicta sit error, dolorem, dignissimos quidem repudiandae enim nobis incidunt,
-                           
+                        <h2 class="s_subtitle animate__animated animate__fadeInDown">Olvide la preocupación de perder de vista sus gastos en suscripciones. Con nuestra aplicación, puede supervisar fácilmente todas sus suscripciones en un solo lugar, obteniendo así una visión clara y organizada de sus gastos mensuales.
                         </h2>
                         <div class="animate__animated animate__fadeInDown">
                             <a href="./components/login/index.html" class="b_color-primary b_size-form s_button-pulse">
@@ -126,10 +124,6 @@
                                 <span class="s_price-card-item">Lorem ipsum dolor sit amet consectetur</span>
                                 <span class="s_price-card-item">Lorem ipsum dolor sit amet consectetur</span>
                                 <span class="s_price-card-item">Lorem ipsum dolor sit amet consectetur</span>
-                                <span class="s_price-card-item">Lorem ipsum dolor sit amet consectetur</span>
-                                <span class="s_price-card-item">Lorem ipsum dolor sit amet consectetur</span>
-                                <span class="s_price-card-item">Lorem ipsum dolor sit amet consectetur</span>
-                                <span class="s_price-card-item">Lorem ipsum dolor sit amet consectetur</span>
                             </div>
                         </div>
                         <div class="s_price-card">
@@ -147,14 +141,14 @@
                                 <span class="s_price-card-item">Lorem ipsum dolor sit amet consectetur</span>
                                 <span class="s_price-card-item">Lorem ipsum dolor sit amet consectetur</span>
                                 <span class="s_price-card-item">Lorem ipsum dolor sit amet consectetur</span>
-                                <span class="s_price-card-item">Lorem ipsum dolor sit amet consectetur</span>
-                                <span class="s_price-card-item">Lorem ipsum dolor sit amet consectetur</span>
-                                <span class="s_price-card-item">Lorem ipsum dolor sit amet consectetur</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
+            <button class="btn-up hide" id="up">
+                <i class="uil uil-arrow-up"></i>
+            </button>
         </div>
     </div>
     <footer class="s_footer">
@@ -166,23 +160,7 @@
             </div>
         </div>
     </footer>
-    
-    <script>
-        const d = document,
-            redirUno = d.getElementById('redir-uno'),
-            redirDos = d.getElementById('redir-dos'),
-            redirTres = d.getElementById('redir-tres')
-            redirUno.addEventListener('click', () => {
-                window.location = "./components/login/index.html";
-            })
-            redirDos.addEventListener('click', () => {
-                window.location = "./components/login/index.html";
-            })
-            redirTres.addEventListener('click', () => {
-                window.location = "./components/login/index.html";
-            })
-    </script>
-
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
