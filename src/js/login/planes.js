@@ -19,6 +19,7 @@ const planFree = async () => {
                 nombre: localStorage.getItem("nombre"),
                 correo: localStorage.getItem("correo"),
                 contrasena: localStorage.getItem("contrasena"),
+                telefono: parseInt(localStorage.getItem("telefono")),
                 plan: "free"
             })
         },
@@ -28,6 +29,7 @@ const planFree = async () => {
         localStorage.removeItem("nombre");
         localStorage.removeItem("correo");
         localStorage.removeItem("contrasena");
+        localStorage.removeItem("telefono");
         window.location = "../../components/dashboard/main.html";
 
     } catch (error) {
@@ -46,6 +48,7 @@ const planPlus = async () => {
                 nombre: localStorage.getItem("nombre"),
                 correo: localStorage.getItem("correo"),
                 contrasena: localStorage.getItem("contrasena"),
+                telefono: parseInt(localStorage.getItem("telefono")),
                 plan: "plus"
             })
         },
@@ -55,6 +58,7 @@ const planPlus = async () => {
         localStorage.removeItem("nombre");
         localStorage.removeItem("correo");
         localStorage.removeItem("contrasena");
+        localStorage.removeItem("telefono");
         window.location = "../../components/dashboard/main.html";
         
     } catch (error) {
@@ -73,6 +77,7 @@ const planPremiun = async () => {
                 nombre: localStorage.getItem("nombre"),
                 correo: localStorage.getItem("correo"),
                 contrasena: localStorage.getItem("contrasena"),
+                telefono: parseInt(localStorage.getItem("telefono")),
                 plan: "premiun"
             })
         },
@@ -82,6 +87,7 @@ const planPremiun = async () => {
         localStorage.removeItem("nombre");
         localStorage.removeItem("correo");
         localStorage.removeItem("contrasena");
+        localStorage.removeItem("telefono");
         window.location = "../../components/dashboard/main.html";
         
     } catch (error) {
