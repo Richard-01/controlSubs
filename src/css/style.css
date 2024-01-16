@@ -1,9 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Poppins&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap');
 *, html {
     margin: 0;
     box-sizing: border-box;
     font-family: 'Nunito', sans-serif;
+    user-select: none;
 }
 
+a {
+  text-decoration: none;
+}
 
+:root {
+  --morado: rgb(106 76 203);
+  --color-inputs: #C6C6C6;
+/*---------colors dark-mode and sidebar----------*/
+  --primary-color: #0E4BF1;
+  --color-panel: #FFF;
+  --text-color: #000;
+  --black-light: #707070;
+  --border-color: #E6E5E5;
+  --toggle-color: #DDD;
+  --title-icon-color: #FFF;
+}

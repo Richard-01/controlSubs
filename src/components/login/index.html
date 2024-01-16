@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/login/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Login</title>
+</head>
+<body>
+
+    <span id="alert" class="span-alert" hidden>
+        <div class="cont-alert">
+            <div class="card-alert">
+                <h2>Error en la autentificacion</h2>
+                <button class="btn-alert">Cerrar</button>
+            </div>
+        </div>
+    </span>
+
+    <main>
+        <div class="txt-cont">
+            <div class="cont-titulo">
+                <h3 id="titulo-p">Hola de nuevo!</h3><span class="mano">👋</span>
+                <span id="volver" class="icon-fa"><i class="fa-solid fa-chevron-left"></i></span>
+            </div>
+            <p id="parrafo-p">Inicia sesion para ingresar</p>
+        </div>
+        <div class="img-cont">
+            <img id="imagen" src="../../img/login/Login-amico.svg" alt="" srcset="">
+        </div>
+    </main>
+
+    <section class="cont-form">
+        <form action="">
+
+            <div hidden id="input-sor" class="form-group">
+                <div class="label-cont">
+                    <img src="../../img/login/nombre.png" alt="">
+                    <label for="">Nombre</label>
+                </div>
+                <div class="input-cont">
+                    <input id="nombre" class="input" type="text" placeholder="nombre..." autocomplete="off">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="label-cont">
+                    <img src="../../img/login/correo.png" alt="">
+                    <label for="">Correo</label>
+                </div>
+                <div class="input-cont">
+                    <input id="correo" class="input" type="email" placeholder="usuario@gmail.com" autocomplete="off">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="label-cont">
+                    <img src="../../img/login/contraseña.png" alt="">
+                    <label for="">Contraseña</label>
+                </div>
+                <div class="input-cont">
+                    <input id="contrasena" class="input" type="password" placeholder="ingrese su contraseña" autocomplete="off">
+                </div>
+            </div>
+
+            <div id="olv-contra" class="form-group">
+                <a class="link-danger" href="contraseña.html">Olvide mi contraseña</a>
+            </div>
+
+        </form>
+    </section>
+
+    <section class="footer-login">
+        <button id="btn-p" class="btn-principal">Iniciar sesion</button>
+        <div class="links-footer">
+            <a id="cuenta" class="link" hidden href="#">No tienes una cuenta?</a>
+            <a id="cambio" class="bold morado" href="#">Crear cuenta</a>
+        </div>
+    </section>
+
+    <script src="../../js/login/main.js"></script>
+    
+</body>
+</html>
