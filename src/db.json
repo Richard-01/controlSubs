@@ -1,52 +1,52 @@
 {
-    "usuarios": [
-      {
-        "nombre": "alex",
-        "correo": "alex@gmail.com",
-        "contrasena": "1234567890",
-        "plan": "free",
-        "id": 1
-      },
-      {
-        "nombre": "juan",
-        "correo": "juan@gmail.com",
-        "contrasena": "saonsaosa",
-        "plan": "premiun",
-        "id": 2
-      },
-      {
-        "nombre": "migue",
-        "correo": "migue@gmail.com",
-        "contrasena": "migue122121",
-        "plan": "plus",
-        "id": 3
-      },
-      {
-        "nombre": "alex",
-        "correo": "alex12@gmail.com",
-        "contrasena": "alex121212",
-        "plan": "plus",
-        "id": 4
-      },
-      {
-        "nombre": "albeiro",
-        "correo": "albeiro@gmail.com",
-        "contrasena": "albeiro123",
-        "plan": "plus",
-        "id": 5
-      },
-      {
-        "nombre": "teo",
-        "correo": "teo@gmail.com",
-        "contrasena": "teo12345",
-        "plan": "plus",
-        "id": "749f"
-      }
-    ],
-    "plataformas": [
-      {
-        "id":1,
-        "nombre": "Netfix"
-      }
-    ]
+  "usuarios": [
+    {
+      "nombre": "riwi",
+      "correo": "riwi@gmail.com",
+      "contrasena": "riwi2023",
+      "plan": "free",
+      "id": "ff81"
+    },
+    {
+      "nombre": "alex",
+      "correo": "alex@gmail.com",
+      "contrasena": "1234567890",
+      "plan": "free",
+      "id": "a9d0"
+    },
+    {
+      "nombre": "richi",
+      "correo": "richi@gmail.com",
+      "contrasena": "richi123",
+      "plan": "premiun",
+      "id": "ff26"
+    },
+    {
+      "nombre": "vermen",
+      "correo": "vermenrainer@gmail.com",
+      "contrasena": "12345",
+      "plan": "free",
+      "id": "eab9"
+    },
+    {
+      "nombre": "esteban",
+      "correo": "esteban@gmail.com",
+      "contrasena": "12345",
+      "plan": "free",
+      "id": "e872"
+    },
+    {
+      "nombre": "alex",
+      "correo": "alex1@gmail.com",
+      "contrasena": "123456",
+      "plan": "premiun",
+      "id": "d48f"
+    }
+  ],
+  "plataformas": [
+    {
+      "id": 1,
+      "nombre": "Netfix"
+    }
+  ]
 }

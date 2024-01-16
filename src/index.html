@@ -41,7 +41,7 @@
                            
                         </h2>
                         <div class="animate__animated animate__fadeInDown">
-                            <a class="b_color-primary b_size-form s_button-pulse">
+                            <a href="./components/login/index.html" class="b_color-primary b_size-form s_button-pulse">
                                 <span>Registrate Gratis</span>
                             </a>    
                         </div>
@@ -94,7 +94,7 @@
                         <h1 class="s_price-title">Nuestros planes de precios</h1>
                         <h2 class="s_price-subtitle"> Pronto disponibles! <br> precios simples y transparentes</h2>
                         <div class="s_price-button">
-                            <a class="b_color-primary b_size-form s_button-pulse">
+                            <a href="./components/login/index.html" class="b_color-primary b_size-form s_button-pulse">
                                 <span>Registrate Gratis</span>
                             </a>
                         </div>
@@ -104,7 +104,7 @@
                             <h1 class="s_price-card-title">$0/mes</h1>
                             <h2 class="s_price-card-subtitle">Plan Básico</h2>
                             <div class="s_price-card-button">
-                                <button class="b_color-secondary b_size-form b_size-form2">
+                                <button id="redir-uno" class="b_color-secondary b_size-form b_size-form2">
                                     <span>Empezar</span>
                                 </button>
                             </div>
@@ -118,7 +118,7 @@
                             <h1 class="s_price-card-title">$4.99/mes</h1>
                             <h2 class="s_price-card-subtitle">Plan Pro (Recomendado)</h2>
                             <div class="s_price-card-button">
-                                <button class="b_color-primary b_size-form b_size-form2">Empezar</button>
+                                <button class="b_color-primary b_size-form b_size-form2" id="redir-dos">Empezar</button>
                             </div>
                             <div class="s_price-card-list">
                                 <span class="s_price-card-item">Sigue hasta 4 suscripciones.</span>
@@ -136,7 +136,7 @@
                             <h1 class="s_price-card-title">$8.99/mes</h1>
                             <h2 class="s_price-card-subtitle">Plan Pro Extendido</h2>
                             <div class="s_price-card-button">
-                                <button class="b_color-secondary b_size-form b_size-form2">
+                                <button id="redir-tres" class="b_color-secondary b_size-form b_size-form2">
                                     <span>Empezar</span>
                                 </button>
                             </div>
@@ -167,6 +167,22 @@
         </div>
     </footer>
     
+    <script>
+        const d = document,
+            redirUno = d.getElementById('redir-uno'),
+            redirDos = d.getElementById('redir-dos'),
+            redirTres = d.getElementById('redir-tres')
+            redirUno.addEventListener('click', () => {
+                window.location = "./components/login/index.html";
+            })
+            redirDos.addEventListener('click', () => {
+                window.location = "./components/login/index.html";
+            })
+            redirTres.addEventListener('click', () => {
+                window.location = "./components/login/index.html";
+            })
+    </script>
+
 </body>
 
 </html>

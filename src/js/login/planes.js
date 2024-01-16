@@ -25,8 +25,10 @@ const planFree = async () => {
         res = await fetch(`http://localhost:3000/usuarios/${localStorage.getItem("id")}`, options),
         json = await res.json();
 
-        localStorage.setItem("plan", "free");  
-        window.location = "inicio.html";
+        localStorage.removeItem("nombre");
+        localStorage.removeItem("correo");
+        localStorage.removeItem("contrasena");
+        window.location = "../../components/dashboard/main.html";
 
     } catch (error) {
         console.log(error);
@@ -50,8 +52,10 @@ const planPlus = async () => {
         res = await fetch(`http://localhost:3000/usuarios/${localStorage.getItem("id")}`, options),
         json = await res.json();
 
-        localStorage.setItem("plan", "plus");  
-        window.location = "inicio.html";
+        localStorage.removeItem("nombre");
+        localStorage.removeItem("correo");
+        localStorage.removeItem("contrasena");
+        window.location = "../../components/dashboard/main.html";
         
     } catch (error) {
         console.log(error);
@@ -75,8 +79,10 @@ const planPremiun = async () => {
         res = await fetch(`http://localhost:3000/usuarios/${localStorage.getItem("id")}`, options),
         json = await res.json();
 
-        localStorage.setItem("plan", "premiun");  
-        window.location = "inicio.html";
+        localStorage.removeItem("nombre");
+        localStorage.removeItem("correo");
+        localStorage.removeItem("contrasena");
+        window.location = "../../components/dashboard/main.html";
         
     } catch (error) {
         console.log(error);

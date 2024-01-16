@@ -69,7 +69,7 @@ btnPrincipal.addEventListener("click", async () => {
                     }
 
                     if ( userVerified == true ) {
-                        window.location = "inicio.html";
+                        window.location = "../../components/dashboard/main.html";
                     } else {
                         text("Usuario o contraseña incorrectos");
                         alert.removeAttribute("hidden");
@@ -132,7 +132,7 @@ btnPrincipal.addEventListener("click", async () => {
                                 localStorage.setItem("nombre", nombre.value);
                                 localStorage.setItem("correo", correo.value);
                                 localStorage.setItem("contrasena", contrasena.value);
-                                window.location = "planes.html";
+                                window.location = "./planes.html";
                             }
 
                         } catch (error) {
