@@ -282,14 +282,25 @@ details p {
   border-left: 2px solid var(--morado);
 }
 
-.ambur {
+.top {
+  color: var(--toggle-color);
+}
+
+.rotated-element {
+  transform: rotate(180deg);
+}
+
+.arrow {
   position: fixed;
   margin-left: -27px;
-  background-color: white;
+  background-color: var(--morado);
   border-radius: 50%;
   font-size: 1px;
   width: 25px;
   height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 details[open] summary {
