@@ -5,37 +5,44 @@
     {
       "id": 1,
       "nombre": "Netfix",
-      "imagen": "../../img/icons/netflix.png"
+      "imagen": "../../img/icons/netflix.png",
+      "descripcion": "Netflix es un servicio de streaming por suscripción que permite a sus miembros ver series y películas en un dispositivo con conexión a internet. Los miembros pueden elegir entre una gran cantidad de películas, series, documentales y conciertos."
     },
     {
       "id": 2,
       "nombre": "Spotify",
-      "imagen": "../../img/icons/spotify.png"
+      "imagen": "../../img/icons/spotify.png",
+      "descripcion": "Spotify es un servicio de música, podcasts y videos digitales que ofrece acceso a millones de canciones y otro contenido de creadores de todo el mundo. Es una plataforma de servicios digitales de audio y video en streaming de origen sueco"
     },
     {
       "id": 3,
       "nombre": "Youtube",
-      "imagen": "../../img/icons/youtube.png"
+      "imagen": "../../img/icons/youtube.png",
+      "descripcion": "YouTube es un sitio web gratuito que permite a los usuarios registrados subir y compartir clips de vídeo en línea. Es una especie de televisión a la carta por Internet, donde puedes ver contenido profesional y de cualquier tipo de usuarios."
     },
     {
       "id": 4,
       "nombre": "Prime video",
-      "imagen": "../../img/icons/prime.png"
+      "imagen": "../../img/icons/prime.png",
+      "descripcion": "Amazon Prime Video es un servicio de streaming de películas y series creado y gestionado por Amazon. Se ofrece como un servicio independiente o como parte de la suscripción a Amazon Prime."
     },
     {
       "id": 5,
       "nombre": "Rappi",
-      "imagen": "../../img/icons/rappi.png"
+      "imagen": "../../img/icons/rappi.png",
+      "descripcion": "Rappi es una plataforma virtual que conecta a los usuarios con los comercios para que puedan adquirir productos y servicios. Rappi ofrece una amplia variedad de productos y servicios que se entregan en minutos."
     },
     {
       "id": 6,
-      "nombre": "Twich",
-      "imagen": "../../img/icons/twich.png"
+      "nombre": "Twitch",
+      "imagen": "../../img/icons/twitch.png",
+      "descripcion": "Twitch es una plataforma de streaming de vídeo que permite a los creadores emitir contenido en directo y a los espectadores verlo. Es propiedad de Amazon y es considerada la plataforma de streaming más popular y grande del mundo."
     },
     {
       "id": 7,
       "nombre": "HBO max",
-      "imagen": "../../img/icons/hbo.svg"
+      "imagen": "../../img/icons/hbo.svg",
+      "descripcion": "HBO Max es una plataforma de streaming de contenido bajo demanda que reúne todo el contenido de HBO, además de series de televisión, películas taquilleras y nuevos Max Originals. La aplicación está disponible en smart TV, Android y iOS."
     }
   ]
 }
