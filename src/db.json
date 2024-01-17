@@ -1,5 +1,13 @@
 {
   "usuarios": [
+    {
+      "nombre": "alex",
+      "correo": "alex@gmail.com",
+      "contrasena": "alex12345",
+      "telefono": 3015656999,
+      "plan": "plus",
+      "id": "c392"
+    }
   ],
   "plataformas": [
     {
