@@ -1,34 +1,41 @@
 {
   "usuarios": [
-    {
-      "nombre": null,
-      "correo": null,
-      "contrasena": null,
-      "telefono": null,
-      "plan": "free",
-      "id": "9f73"
-    },
-    {
-      "nombre": "alex",
-      "correo": "alex@gmail.com",
-      "contrasena": "alex12345",
-      "telefono": "3015656999",
-      "plan": "free",
-      "id": "a298"
-    },
-    {
-      "nombre": "alex",
-      "correo": "alex1@gmail.com",
-      "contrasena": "alex12345",
-      "telefono": 3125977778,
-      "plan": "plus",
-      "id": "3199"
-    }
   ],
   "plataformas": [
     {
       "id": 1,
-      "nombre": "Netfix"
+      "nombre": "Netfix",
+      "imagen": "../../img/icons/netflix.png"
+    },
+    {
+      "id": 2,
+      "nombre": "Spotify",
+      "imagen": "../../img/icons/spotify.png"
+    },
+    {
+      "id": 3,
+      "nombre": "Youtube",
+      "imagen": "../../img/icons/youtube.png"
+    },
+    {
+      "id": 4,
+      "nombre": "Prime video",
+      "imagen": "../../img/icons/prime.png"
+    },
+    {
+      "id": 5,
+      "nombre": "Rappi",
+      "imagen": "../../img/icons/rappi.png"
+    },
+    {
+      "id": 6,
+      "nombre": "Twich",
+      "imagen": "../../img/icons/twich.png"
+    },
+    {
+      "id": 7,
+      "nombre": "HBO max",
+      "imagen": "../../img/icons/hbo.svg"
     }
   ]
 }
