@@ -39,5 +39,7 @@ getAll();
 
 salir.addEventListener("click", () => {
     localStorage.removeItem("id");
+    localStorage.removeItem("status");
+    localStorage.removeItem("mode");
     window.location.reload();
 })

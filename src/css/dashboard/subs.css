@@ -1,0 +1,22 @@
+.dashboard-content-subs {
+  background-color: red;
+  border-radius: 10px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.overview-subs {
+  background-color: blue;
+  width: 50%;
+  height: 70px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 10px;
+}
+img{
+    position: fixed;
+}

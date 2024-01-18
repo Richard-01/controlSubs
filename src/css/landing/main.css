@@ -116,6 +116,10 @@ img {
     justify-content: space-between;
     align-items: center;
 }
+.s_logos-img img:hover{
+    transition: all 500ms;
+    transform: scale(1.5);
+}
 .s_feature {
     gap: 24px;
     display: flex;

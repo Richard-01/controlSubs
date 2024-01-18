@@ -80,7 +80,9 @@ btnPrincipal.addEventListener("click", async () => {
                     }
 
                 } catch (error) {
-                    console.log(error);
+                    text("Ups... Ha ocurrido un error inesperado");
+                    alert.removeAttribute("hidden");
+                    window.location.reload();
                 }
             }
         } else {
@@ -161,7 +163,9 @@ btnPrincipal.addEventListener("click", async () => {
                                     }
         
                                 } catch (error) {
-                                    console.log(error);
+                                    text("Ups... Ha ocurrido un error inesperado");
+                                    alert.removeAttribute("hidden");
+                                    window.location.reload();
                                 }
                             }
                         }
