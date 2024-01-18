@@ -177,21 +177,34 @@ body.dark .title {
 
 .title {
   width: 100%;
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 body.dark .p-principal {
   color: #a5a5a5;
 }
 
+.dashboard-content {
+  width: 95%;
+  padding: 20px 20px 20px 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.overview {
+  width: 100%;
+}
+
 .p-principal {
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: #564949;
 }
 
 .cont-info {
   width: 100%;
-  height: 40vh;
+  height: 30vh;
   margin-top: 20px;
   display: flex;
   flex-direction: column;
@@ -209,7 +222,7 @@ body.dark .p-principal {
 
 .card-cost {
   width: 80%;
-  height: 100px;
+  min-height: 80px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -222,7 +235,7 @@ body.dark .p-principal {
 .card-cost p,
 .card-cost h3 {
   width: 100%;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 .cont-data {
@@ -248,21 +261,22 @@ details {
 }
 details summary {
   font-weight: 400;
-  font-size: 1.25rem;
-  padding: 1rem;
+  font-size: 1rem;
+  padding: 0.5rem;
   cursor: pointer;
   list-style: none;
   display: flex;
 }
 
 .cont-img {
-  width: 9%;
-  height: 80px;
+  min-width: 6%;
+  max-width: 9%;
+  height: 60px;
   display: flex;
 }
 
 .cont-img img {
-  width: 85%;
+  width: 100%;
 }
 
 body.dark .cont-txt {
@@ -276,7 +290,7 @@ body.dark .cont-txt {
 }
 
 details p {
-  padding: 1rem;
+  padding: .8rem;
   margin: 0 1rem 1rem 1rem;
   color: var(--black-light);
   border-left: 2px solid var(--morado);
@@ -326,7 +340,7 @@ details[open] summary::before {
 
 .barra {
   width: 90%;
-  height: 25px;
+  height: 15px;
   border-radius: 20px;
   border: 2px solid rgb(129, 129, 129);
 }
