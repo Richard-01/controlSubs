@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css" async>
     <link rel="stylesheet" href="css/landing/main.css" async>
-    <title>control Subs!</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <title>SubSphere!</title>
 </head>
 
 <body>
     <header class="s_header">
         <div class="s_header-container">
             <div class="s_logo">
-                <img src="./img/landing/Company-Twitch.svg" alt="Logo" width="120" height="48">
+                <img class="logo" src="./img/go.png" alt="Logo">
             </div>
             <div class="user-icon">
                 <a href="components/login/index.html">
@@ -35,13 +36,10 @@
                             rgb(255 0 154) 100%
                           );"> Suscripciones </span>
                         </h1>
-                        <h2 class="s_subtitle animate__animated animate__fadeInDown">Lorem ipsum, dolor sit    amet
-                            consectetur ... rerum distinctio aspernatur dicta eius eos cumque.
-                            Architecto dicta sit error, dolorem, dignissimos quidem repudiandae enim nobis incidunt,
-                           
+                        <h2 class="s_subtitle animate__animated animate__fadeInDown">Olvide la preocupación de perder de vista sus gastos en suscripciones. Con nuestra aplicación, puede supervisar fácilmente todas sus suscripciones en un solo lugar, obteniendo así una visión clara y organizada de sus gastos mensuales.
                         </h2>
                         <div class="animate__animated animate__fadeInDown">
-                            <a class="b_color-primary b_size-form s_button-pulse">
+                            <a href="./components/login/index.html" class="b_color-primary b_size-form s_button-pulse">
                                 <span>Registrate Gratis</span>
                             </a>    
                         </div>
@@ -94,7 +92,7 @@
                         <h1 class="s_price-title">Nuestros planes de precios</h1>
                         <h2 class="s_price-subtitle"> Pronto disponibles! <br> precios simples y transparentes</h2>
                         <div class="s_price-button">
-                            <a class="b_color-primary b_size-form s_button-pulse">
+                            <a href="./components/login/index.html" class="b_color-primary b_size-form s_button-pulse">
                                 <span>Registrate Gratis</span>
                             </a>
                         </div>
@@ -104,7 +102,7 @@
                             <h1 class="s_price-card-title">$0/mes</h1>
                             <h2 class="s_price-card-subtitle">Plan Básico</h2>
                             <div class="s_price-card-button">
-                                <button class="b_color-secondary b_size-form b_size-form2">
+                                <button id="redir-uno" class="b_color-secondary b_size-form b_size-form2">
                                     <span>Empezar</span>
                                 </button>
                             </div>
@@ -118,15 +116,11 @@
                             <h1 class="s_price-card-title">$4.99/mes</h1>
                             <h2 class="s_price-card-subtitle">Plan Pro (Recomendado)</h2>
                             <div class="s_price-card-button">
-                                <button class="b_color-primary b_size-form b_size-form2">Empezar</button>
+                                <button class="b_color-primary b_size-form b_size-form2" id="redir-dos">Empezar</button>
                             </div>
                             <div class="s_price-card-list">
                                 <span class="s_price-card-item">Sigue hasta 4 suscripciones.</span>
                                 <span class="s_price-card-item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
-                                <span class="s_price-card-item">Lorem ipsum dolor sit amet consectetur</span>
-                                <span class="s_price-card-item">Lorem ipsum dolor sit amet consectetur</span>
-                                <span class="s_price-card-item">Lorem ipsum dolor sit amet consectetur</span>
-                                <span class="s_price-card-item">Lorem ipsum dolor sit amet consectetur</span>
                                 <span class="s_price-card-item">Lorem ipsum dolor sit amet consectetur</span>
                                 <span class="s_price-card-item">Lorem ipsum dolor sit amet consectetur</span>
                                 <span class="s_price-card-item">Lorem ipsum dolor sit amet consectetur</span>
@@ -136,7 +130,7 @@
                             <h1 class="s_price-card-title">$8.99/mes</h1>
                             <h2 class="s_price-card-subtitle">Plan Pro Extendido</h2>
                             <div class="s_price-card-button">
-                                <button class="b_color-secondary b_size-form b_size-form2">
+                                <button id="redir-tres" class="b_color-secondary b_size-form b_size-form2">
                                     <span>Empezar</span>
                                 </button>
                             </div>
@@ -147,14 +141,14 @@
                                 <span class="s_price-card-item">Lorem ipsum dolor sit amet consectetur</span>
                                 <span class="s_price-card-item">Lorem ipsum dolor sit amet consectetur</span>
                                 <span class="s_price-card-item">Lorem ipsum dolor sit amet consectetur</span>
-                                <span class="s_price-card-item">Lorem ipsum dolor sit amet consectetur</span>
-                                <span class="s_price-card-item">Lorem ipsum dolor sit amet consectetur</span>
-                                <span class="s_price-card-item">Lorem ipsum dolor sit amet consectetur</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
+            <button class="btn-up hide" id="up">
+                <i class="uil uil-arrow-up"></i>
+            </button>
         </div>
     </div>
     <footer class="s_footer">
@@ -166,7 +160,7 @@
             </div>
         </div>
     </footer>
-    
+    <script src="./js/main.js"></script>
 </body>
 
 </html>

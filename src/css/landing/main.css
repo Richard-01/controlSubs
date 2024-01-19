@@ -18,6 +18,9 @@ img {
     flex-direction: column;
     background-color: rgb(246, 246, 246);
 }
+.logo{
+    width: 200px;
+}
 .s_header-container {
     height: 80px;
     width: 100%;
@@ -59,7 +62,7 @@ img {
     justify-content: space-between;
 }
 .s_mockup {
-    width: 512px;
+    /* width: 512px; Activar cuando se vaya a colocar el video*/
     max-width: 512px;
     position: relative;
     display: flex;
@@ -112,6 +115,10 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.s_logos-img img:hover{
+    transition: all 500ms;
+    transform: scale(1.5);
 }
 .s_feature {
     gap: 24px;
@@ -315,4 +322,28 @@ img {
     background-color: transparent;
     color: rgb(106 76 203);
     font-weight: bold;
+}
+.btn-up{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    text-decoration: none;
+    border-radius: 50%;
+    border: none;
+    outline: 0;
+    background-color: var(--morado);
+    font-size: 25px;
+    right: 25px;
+    transform: translateY(-12px);
+    bottom: 100px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.hide{
+    opacity: 0;
+}
+
+.active{
+    opacity: 1;
 }

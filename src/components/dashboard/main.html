@@ -39,7 +39,7 @@
                 </li>
             </ul>
             <ul class="logout-mode" style="padding-left: 0px;">
-                <li>
+                <li id="salir">
                     <a href="#">
                         <i class="uil uil-signout"></i>
                         <span class="link-name">Salir</span>
@@ -60,15 +60,81 @@
     </nav>
     <section class="dashboard">
         <div class="top">
-            <i class="uil uil-bars sidebar-toggle"></i>
+            <i id="rotated" class="arrow uil-angle-left sidebar-toggle"></i>
         </div>
         <div class="dashboard-content">
             <div class="overview">
-                <div class="title"></div>
+                <div id="titulo-name" class="title"></div>
+                <p class="p-principal">Comienza a gestionar tus suscripciones</p>
+            </div>
+            <div class="cont-info">
+                <div class="card-cost">
+                    <p>Total gastado en este mes</p>
+                    <h3>$</h3>
+                </div>
+                <div class="card-cost">
+                    <p>Suscripciones activas</p>
+                    <h3>0</h3>
+                </div>
+            </div>
+            <div class="cont-data">
+                <details name="info">
+                    <summary>
+                        <div class="cont-img">
+                            <img src="../../img/icons/netflix.png" alt="">
+                        </div>
+                        <div class="cont-txt">
+                            <h3>Netflix</h3>
+                            <h4>$ 200 / Mes</h4>
+                        </div>
+                    </summary>
+                    <p>Todavia te quedan 20 dias para realizar tu pago.</p>
+                    <div class="cont-barra"> 
+                        <div class="barra">
+                            <div class="bar"></div>
+                        </div> 
+                    </div>
+                </details>
+                <details name="info">
+                    <summary>
+                        <div class="cont-img">
+                            <img src="../../img/icons/netflix.png" alt="">
+                        </div>
+                        <div class="cont-txt">
+                            <h3>Netflix</h3>
+                            <h4>$ 200 / Mes</h4>
+                        </div>
+                    </summary>
+                    <p>Todavia te quedan 20 dias para realizar tu pago.</p>
+                    <div class="cont-barra"> 
+                        <div class="barra">
+                            <div class="bar"></div>
+                        </div> 
+                    </div>
+                </details>
+                <details name="info">
+                    <summary>
+                        <div class="cont-img">
+                            <img src="../../img/icons/netflix.png" alt="">
+                        </div>
+                        <div class="cont-txt">
+                            <h3>Netflix</h3>
+                            <h4>$ 200 / Mes</h4>
+                        </div>
+                    </summary>
+                    <p>Todavia te quedan 20 dias para realizar tu pago.</p>
+                    <div class="cont-barra"> 
+                        <div class="barra">
+                            <div class="bar"></div>
+                        </div> 
+                    </div>
+                </details>
+                    
             </div>
         </div>
     </section>
     <script src="../../js/dashboard/sidebar.js"></script>
+    <script src="../../js/dashboard/main.js"></script>
 </body>
 
 </html>

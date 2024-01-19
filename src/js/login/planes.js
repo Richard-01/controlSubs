@@ -19,14 +19,18 @@ const planFree = async () => {
                 nombre: localStorage.getItem("nombre"),
                 correo: localStorage.getItem("correo"),
                 contrasena: localStorage.getItem("contrasena"),
+                telefono: parseInt(localStorage.getItem("telefono")),
                 plan: "free"
             })
         },
         res = await fetch(`http://localhost:3000/usuarios/${localStorage.getItem("id")}`, options),
         json = await res.json();
 
-        localStorage.setItem("plan", "free");  
-        window.location = "inicio.html";
+        localStorage.removeItem("nombre");
+        localStorage.removeItem("correo");
+        localStorage.removeItem("contrasena");
+        localStorage.removeItem("telefono");
+        window.location = "../../components/dashboard/main.html";
 
     } catch (error) {
         console.log(error);
@@ -44,14 +48,18 @@ const planPlus = async () => {
                 nombre: localStorage.getItem("nombre"),
                 correo: localStorage.getItem("correo"),
                 contrasena: localStorage.getItem("contrasena"),
+                telefono: parseInt(localStorage.getItem("telefono")),
                 plan: "plus"
             })
         },
         res = await fetch(`http://localhost:3000/usuarios/${localStorage.getItem("id")}`, options),
         json = await res.json();
 
-        localStorage.setItem("plan", "plus");  
-        window.location = "inicio.html";
+        localStorage.removeItem("nombre");
+        localStorage.removeItem("correo");
+        localStorage.removeItem("contrasena");
+        localStorage.removeItem("telefono");
+        window.location = "../../components/dashboard/main.html";
         
     } catch (error) {
         console.log(error);
@@ -69,14 +77,18 @@ const planPremiun = async () => {
                 nombre: localStorage.getItem("nombre"),
                 correo: localStorage.getItem("correo"),
                 contrasena: localStorage.getItem("contrasena"),
+                telefono: parseInt(localStorage.getItem("telefono")),
                 plan: "premiun"
             })
         },
         res = await fetch(`http://localhost:3000/usuarios/${localStorage.getItem("id")}`, options),
         json = await res.json();
 
-        localStorage.setItem("plan", "premiun");  
-        window.location = "inicio.html";
+        localStorage.removeItem("nombre");
+        localStorage.removeItem("correo");
+        localStorage.removeItem("contrasena");
+        localStorage.removeItem("telefono");
+        window.location = "../../components/dashboard/main.html";
         
     } catch (error) {
         console.log(error);

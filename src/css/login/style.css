@@ -341,7 +341,7 @@ form {
 
     .form-group {
         width: 100%;
-        height: 25%;
+        height: 20%;
     }
 
     .label-cont {
@@ -353,7 +353,7 @@ form {
     }
 
     .label-cont img {
-        width: 6%;
+        width: 5%;
     }
 
     .input-cont {
@@ -362,6 +362,7 @@ form {
         display: flex;
         align-items: center;
         justify-content: center;
+        margin-top: 5px;
     }
 
     .input {
