@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/dashboard/ajustes.css">
+    <link rel="stylesheet" href="../../css/dashboard/main.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+</head>
+
+<body>
+    <nav>
+        <div class="logo-name">
+            <div class="logo-image">
+                <img src="../../img/dashboard/SubS.png" alt="logo">
+            </div>
+            <span class="logo_name">SubSphere</span>
+        </div>
+        <div class="menu-items">
+            <ul class="nav-links">
+                <li>
+                    <a href="#">
+                        <i class="uil uil-estate"></i>
+                        <span class="link-name">Inicio</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="uil uil-list-ol-alt"></i>
+                        <span class="link-name">Suscripciones</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="uil uil-setting"></i>
+                        <span class="link-name">Ajustes</span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="logout-mode" style="padding-left: 0px;">
+                <li id="salir">
+                    <a href="#">
+                        <i class="uil uil-signout"></i>
+                        <span class="link-name">Salir</span>
+                    </a>
+                </li>
+
+                <li class="mode">
+                    <a href="#">
+                        <i class="uil uil-moon-eclipse"></i>
+                        <span class="link-name">Modo Oscuro</span>
+                    </a>
+                    <div class="mode-toggle">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section class="dashboard">
+        <div class="top">
+            <i id="rotated" class="arrow uil-angle-left sidebar-toggle"></i>
+        </div>
+
+
+        <div class="container">
+            <div class="container-ajustes">
+                <h3>Ajustes</h3>
+                <hr>
+                <h3 class="idiomaTitulo">Idioma</h3>
+                <select class="idioma" name="" id="">
+                    <option value="">Spanish</option>
+                    <option value="">English</option>
+                </select>
+
+                <details class="monedaTotal">
+                    <summary>Moneda</summary>
+                    <p>Puedes seleccionar la moneda en la que pagaras la suscripcion.</p>
+                    <select class="moneda2">
+                        <option value="">Dollars / peso $ </option>
+                        <option value="">Euro €</option>
+                        <option value="">Yen / Yuan ¥ </option>
+                    </select>
+                </details>
+
+
+                <div class="Notificiones">
+                    
+                    <span class="notif">Notificaciones</span>
+                    <div class="mode-toggleNoti">
+                        <span class="switcher"></span>
+                    </div>
+                    <!-- <div class="notificar">
+                        <i class="uil uil-toggle-off"></i>
+                    </div> -->
+
+                    <!-- <span class="switch">
+                            <input type="checkbox" id="switcher">
+                            <label for="switcher"></label>
+                        </span>
+                     -->
+                    <!-- <button id="notificationButton" onclick="toggleNotification()" i class="uil uil-toggle-off"></i> -->
+                </div>
+
+                <details class="Visitanos">
+                    <summary>Acerca de</summary>
+                    <a class="VyM" href="#" ></a>
+                </details>
+            </div>
+
+        </div>
+
+
+
+    </section>
+
+
+
+
+
+
+    <script src="../../js/dashboard/sidebar.js"></script>
+    <script src="../../js/dashboard/ajustes.js"></script>
+</body>
+
+</html>
+
+
+<!-- 
+<button id="notificationButton" onclick="toggleNotification()">Activar Notificación</button>
+            <i class="uil uil-angle-down"></i> -->
