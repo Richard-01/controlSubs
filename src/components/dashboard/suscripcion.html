@@ -65,7 +65,7 @@
             <i id="rotated" class="arrow uil-angle-left sidebar-toggle"></i>
         </div>
         <div class="dashboard-content-subs">
-            <div class="overview-subs">
+            <!-- <div class="overview-subs">
                 <div class="container">
                     <img src="../../img/icons/netflix.png" class="image" />
                     <div class="content">
@@ -105,10 +105,30 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <button class="btn">Agregar Suscripcion</button>
+            </div> -->
+                <button class="btn" id="btn">Agregar Suscripcion</button>
     </section>
+    <div class="modal-overlay" id="modalOverlay"></div>
+
+            <div class="modal" id="myModal">
+                <div class="modal-header">
+                    <span>Modal de Suscripción</span>
+                    <span class="modal-close" onclick="closeModal()">X</span>
+                </div>
+                <form id="subscriptionForm">
+                    <label for="plataforma">Plataforma:</label>
+                    <input type="text" id="plataforma" required>
+                    <br>
+                    <label for="frecuencia">Frecuencia de pago:</label>
+                    <input type="text" id="frecuencia" required>
+                    <br>
+                    <label for="precio">Precio:</label>
+                    <input type="text" id="precio" required>
+                    <br>
+                    <button type="button" onclick="addSubscription()">Agregar</button>
+                </form>
     <script src="../../js/dashboard/sidebar.js" async></script>
+    <script src="../../js/dashboard/subs.js" async></script>
 </body>
 
 </html>
