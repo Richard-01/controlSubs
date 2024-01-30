@@ -11,37 +11,37 @@
   ],
   "plataformas": [
     {
-      "id": 1,
+      "id": "1",
       "nombre": "Netfix",
       "imagen": "../../img/icons/netflix.png"
     },
     {
-      "id": 2,
+      "id": "2",
       "nombre": "Spotify",
       "imagen": "../../img/icons/spotify.png"
     },
     {
-      "id": 3,
+      "id": "3",
       "nombre": "Youtube",
       "imagen": "../../img/icons/youtube.png"
     },
     {
-      "id": 4,
+      "id": "4",
       "nombre": "Prime video",
       "imagen": "../../img/icons/prime.png"
     },
     {
-      "id": 5,
+      "id": "5",
       "nombre": "Rappi",
       "imagen": "../../img/icons/rappi.png"
     },
     {
-      "id": 6,
+      "id": "6",
       "nombre": "Twitch",
       "imagen": "../../img/icons/twitch.png"
     },
     {
-      "id": 7,
+      "id": "7",
       "nombre": "HBO max",
       "imagen": "../../img/icons/hbo.svg"
     }
