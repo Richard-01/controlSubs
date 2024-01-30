@@ -44,6 +44,11 @@
       "id": "7",
       "nombre": "HBO max",
       "imagen": "../../img/icons/hbo.svg"
+    },
+    {
+      "id": "8",
+      "nombre": "Esto es una prueba",
+      "imagen": "Esto es una prueba"
     }
   ]
 }
