@@ -106,29 +106,35 @@
                     </div>
                 </div>
             </div> -->
-                <button class="btn" id="btn">Agregar Suscripcion</button>
+            <button class="btn" id="btn">Agregar Suscripcion</button>
     </section>
     <div class="modal-overlay" id="modalOverlay"></div>
 
-            <div class="modal" id="myModal">
-                <div class="modal-header">
-                    <span>Modal de Suscripción</span>
-                    <span class="modal-close" onclick="closeModal()">X</span>
-                </div>
-                <form id="subscriptionForm">
-                    <label for="plataforma">Plataforma:</label>
-                    <input type="text" id="plataforma" required>
-                    <br>
-                    <label for="frecuencia">Frecuencia de pago:</label>
-                    <input type="text" id="frecuencia" required>
-                    <br>
-                    <label for="precio">Precio:</label>
-                    <input type="text" id="precio" required>
-                    <br>
-                    <button type="button" onclick="addSubscription()">Agregar</button>
-                </form>
-    <script src="../../js/dashboard/sidebar.js" async></script>
-    <script src="../../js/dashboard/subs.js" async></script>
+    <div class="modal" id="myModal">
+        <div class="modal-header">
+            <span>Modal de Suscripción</span>
+            <span class="modal-close" onclick="closeModal()">X</span>
+        </div>
+        <form id="subscriptionForm">
+            <div class="form-group">
+                <label for="plataforma">Plataforma:</label>
+                <input type="text" id="plataforma" required>
+            </div>
+            <div class="form-group">
+                <label for="frecuencia">Frecuencia de pago:</label>
+                <select id="frecuencia" required>
+                    <option value="Semanal">Semanal</option>
+                    <option value="Mensual">Mensual</option>
+                    <option value="Anual">Anual</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="precio">Precio:</label>
+                <input type="text" id="precio" required>
+            </div>
+            <button class="btn" type="button" onclick="addSubscription()">Agregar</button>
+        </form>
+        <script src="../../js/dashboard/sidebar.js" async></script>
+        <script src="../../js/dashboard/subs.js" async></script>
 </body>
-
 </html>
