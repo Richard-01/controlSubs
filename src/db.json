@@ -19,6 +19,21 @@
           "precio": 290000
         }
       ]
+    },
+    {
+      "nombre": "William",
+      "correo": "wili@gmail.com",
+      "contrasena": "wili123",
+      "telefono": 32123213,
+      "plan": "premiun",
+      "id": "hola",
+      "subs": [
+        {
+          "plataforma": "Youtube",
+          "pago": "mes",
+          "precio": 15000
+        }
+      ]
     }
   ],
   "plataformas": [
@@ -56,11 +71,6 @@
       "id": "7",
       "nombre": "HBO max",
       "imagen": "../../img/icons/hbo.svg"
-    },
-    {
-      "id": "8",
-      "nombre": "Esto es una prueba",
-      "imagen": "Esto es una prueba"
     }
   ]
 }

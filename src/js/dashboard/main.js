@@ -24,7 +24,8 @@ const getAll = async () => {
                     correo: json[i].correo,
                     contrasena: json[i].contrasena,
                     telefono: json[i].telefono,
-                    plan: json[i].plan
+                    plan: json[i].plan,
+                    subs: json[i].subs
                 }
             }
         }
@@ -39,12 +40,46 @@ const getAll = async () => {
 getAll();
 
 const getSuscriptions = async () => {
+    let subsActivas = 0;
+    let gastoMensual = 0;
     try {
         let res = await fetch(URLSUBS),
         json = await res.json();
-        console.log(json);
-        let resData = await fetch(URL),
-        jsonData = await resData.json();
+        user.subs.forEach(e => {
+            //console.log(e);
+            for (let i = 0; i < json.length; i++) {
+                //console.log(json[i]);
+                if ( json[i].nombre === e.plataforma ) {
+                    subsActivas += 1;
+                    const contSubs = document.getElementById("contSubs");
+                    contSubs.textContent = subsActivas;
+                    gastoMensual += e.precio;
+                    const contDinero = document.getElementById("contDinero");
+                    contDinero.textContent = gastoMensual;
+                    const elemento = document.createRange().createContextualFragment(`
+                    <details name="info">
+                        <summary>
+                            <div class="cont-img">
+                                <img src="${json[i].imagen}" alt="">
+                            </div>
+                            <div class="cont-txt">
+                                <h3>${e. plataforma}</h3>
+                                <h4>$ ${e.precio} / ${e.pago}</h4>
+                            </div>
+                        </summary>
+                        <p>Todavia te quedan 20 dias para realizar tu pago.</p>
+                        <div class="cont-barra"> 
+                            <div class="barra">
+                                <div class="bar"></div>
+                            </div> 
+                        </div>
+                    </details>
+                    `);
+                    const contData = document.getElementById("contData");
+                    contData.append(elemento);
+                }
+            }
+        });
     } catch (err) {
         console.log(err);
     }
