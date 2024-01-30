@@ -6,13 +6,25 @@
       "contrasena": "dsadsad",
       "telefono": 1221211212,
       "plan": "premiun",
-      "id": "7ccc"
+      "id": "7ccc",
+      "subs": [
+        {
+          "plataforma": "Netflix",
+          "pago": "mes",
+          "precio": 15000
+        },
+        {
+          "plataforma": "Spotify",
+          "pago": "anual",
+          "precio": 290000
+        }
+      ]
     }
   ],
   "plataformas": [
     {
       "id": "1",
-      "nombre": "Netfix",
+      "nombre": "Netflix",
       "imagen": "../../img/icons/netflix.png"
     },
     {
