@@ -1,4 +1,7 @@
 const d = document,
+    cardUno = d.getElementById('cardUno'),
+    cardDos = d.getElementById('cardDos'),
+    cardTres = d.getElementById('cardTres'),
     free = d.getElementById('free'),
     plus = d.getElementById('plus'),
     premiun = d.getElementById('premiun');
@@ -95,6 +98,9 @@ const planPremiun = async () => {
     }
 }
 
+cardUno.addEventListener("click", planFree);
 free.addEventListener("click", planFree);
+cardDos.addEventListener("click", planPlus);
 plus.addEventListener("click", planPlus);
+cardTres.addEventListener("click", planPremiun);
 premiun.addEventListener("click", planPremiun);

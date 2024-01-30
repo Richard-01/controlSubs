@@ -2,27 +2,11 @@
   "usuarios": [
     {
       "nombre": "alex",
-      "correo": "alex@gmail.com",
-      "contrasena": "alex12345",
-      "telefono": 3015656999,
-      "plan": "plus",
-      "id": "c392"
-    },
-    {
-      "nombre": "Richard",
-      "correo": "richard@gmail.com",
-      "contrasena": "12345",
-      "telefono": 3145547388,
+      "correo": "alex@saasas",
+      "contrasena": "dsadsad",
+      "telefono": 1221211212,
       "plan": "premiun",
-      "id": "48b9"
-    },
-    {
-      "nombre": "pepito",
-      "correo": "pepito@gmail.com",
-      "contrasena": "123456",
-      "telefono": 3214567898,
-      "plan": "premiun",
-      "id": "b079"
+      "id": "7ccc"
     }
   ],
   "plataformas": [
