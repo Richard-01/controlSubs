@@ -2,7 +2,6 @@
 
 body {
   min-height: 100vh;
-  background-color: var(--primary-color);
 }
 
 body.dark {
@@ -249,6 +248,15 @@ body.dark .p-principal {
   margin-top: 20px;
   border-radius: 10px;
   border: 2px solid rgb(129, 129, 129);
+}
+
+.btn-agg {
+  padding: 10px;
+  background-color: var(--morado);
+  color: white;
+  font-weight: bold;
+  border-radius: 15px;
+  margin: 20px 0;
 }
 
 details {

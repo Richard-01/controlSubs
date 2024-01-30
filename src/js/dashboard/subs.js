@@ -16,7 +16,7 @@ const addSubscription = async () => {
         const plataforma = document.getElementById('plataforma').value;
         const frecuenciaSelect = document.getElementById('frecuencia');
         const frecuencia = frecuenciaSelect.options[frecuenciaSelect.selectedIndex].value;
-        const precio = document.getElementById('precio').value;
+        const precio = parseInt(document.getElementById('precio').value);
 
         const subscriptionData = {
             plataforma,

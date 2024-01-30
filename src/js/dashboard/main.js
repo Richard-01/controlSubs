@@ -40,11 +40,19 @@ const getAll = async () => {
 getAll();
 
 const getSuscriptions = async () => {
+    const contData = document.getElementById("contData");
     let subsActivas = 0;
     let gastoMensual = 0;
     try {
         let res = await fetch(URLSUBS),
         json = await res.json();
+        if (user.subs.length == 0) {
+            const elem = document.createRange().createContextualFragment(`
+            <h2>Aun no tienes suscripciones, que esperas!</h2>
+            <a class="btn-agg" href="suscripcion.html">Agregar suscripcion</a>
+            `)
+            contData.append(elem)
+        }
         user.subs.forEach(e => {
             //console.log(e);
             for (let i = 0; i < json.length; i++) {
@@ -75,7 +83,6 @@ const getSuscriptions = async () => {
                         </div>
                     </details>
                     `);
-                    const contData = document.getElementById("contData");
                     contData.append(elemento);
                 }
             }
