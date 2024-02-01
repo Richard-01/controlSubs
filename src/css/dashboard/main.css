@@ -361,6 +361,10 @@ details[open] summary::before {
   border-radius: 20px;
 }
 
+.titulo-fin {
+  color: var(--text-color);
+}
+
 @keyframes rotate-emoji {
   0% {
     -webkit-transform: rotate(0);

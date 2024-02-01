@@ -23,6 +23,7 @@ const planFree = async () => {
                 correo: localStorage.getItem("correo"),
                 contrasena: localStorage.getItem("contrasena"),
                 telefono: parseInt(localStorage.getItem("telefono")),
+                subs: 0,
                 plan: "free"
             })
         },
@@ -52,6 +53,7 @@ const planPlus = async () => {
                 correo: localStorage.getItem("correo"),
                 contrasena: localStorage.getItem("contrasena"),
                 telefono: parseInt(localStorage.getItem("telefono")),
+                subs: 0,
                 plan: "plus"
             })
         },
@@ -81,6 +83,7 @@ const planPremiun = async () => {
                 correo: localStorage.getItem("correo"),
                 contrasena: localStorage.getItem("contrasena"),
                 telefono: parseInt(localStorage.getItem("telefono")),
+                subs: 0,
                 plan: "premiun"
             })
         },

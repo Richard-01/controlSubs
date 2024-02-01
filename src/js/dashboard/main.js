@@ -46,9 +46,9 @@ const getSuscriptions = async () => {
     try {
         let res = await fetch(URLSUBS),
         json = await res.json();
-        if (user.subs.length == 0) {
+        if (user.subs == 0) {
             const elem = document.createRange().createContextualFragment(`
-            <h2>Aun no tienes suscripciones, que esperas!</h2>
+            <h2 class="titulo-fin">Aun no tienes suscripciones, que esperas!</h2>
             <a class="btn-agg" href="suscripcion.html">Agregar suscripcion</a>
             `)
             contData.append(elem)

@@ -34,6 +34,15 @@
           "precio": 15000
         }
       ]
+    },
+    {
+      "nombre": "Felipe",
+      "correo": "felipe@gmail.com",
+      "contrasena": "felipe123",
+      "telefono": 3211233232,
+      "subs": 0,
+      "plan": "premiun",
+      "id": "8043"
     }
   ],
   "plataformas": [
