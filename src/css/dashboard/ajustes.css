@@ -22,7 +22,7 @@
 } */
 
 .container {
-    height: 600px;
+    height: 100%;
     text-align: left;
     border-radius: 7px;
     margin: 5%;
