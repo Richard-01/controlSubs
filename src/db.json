@@ -43,6 +43,15 @@
       "subs": 0,
       "plan": "premiun",
       "id": "8043"
+    },
+    {
+      "nombre": "Richard",
+      "correo": "Richard@gmail.com",
+      "contrasena": "Richard.mb00",
+      "telefono": 3145554738,
+      "subs": 0,
+      "plan": "plus",
+      "id": "5e52"
     }
   ],
   "plataformas": [
