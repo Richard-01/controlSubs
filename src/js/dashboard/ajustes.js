@@ -1,27 +1,39 @@
+const notificarBtn = document.querySelector('#notificar')
 
+notificarBtn.addEventListener('click',()=>{
+    Notification.requestPermission().then(resultado =>{
+        console.log('Respuesta: ', resultado);
+    })
 
-let notificationEnabled = false;
+})
 
-function toggleNotification() {
-    notificationEnabled = !notificationEnabled;
-    const button = document.getElementById('notificationButton');
+const VerNotificacion = document.querySelector('#ver')
 
-    if (notificationEnabled) {
-        button.textContent = 'Desactivar Notificación';
-        // Aquí puedes agregar la lógica para mostrar la notificación
-        // Puedes usar la API de Notificaciones de JavaScript
-        // Ejemplo básico:
-        // if (Notification.permission === "granted") {
-        //     new Notification("¡Notificación activada!");
-        // } else if (Notification.permission !== "denied") {
-        //     Notification.requestPermission().then(permission => {
-        //         if (permission === "granted") {
-        //             new Notification("¡Notificación activada!");
-        //         }
-        //     });
-        // }
-    } else {
-        button.textContent = 'Activar Notificación';
-        // Puedes agregar la lógica para desactivar la notificación aquí si es necesario
+VerNotificacion.addEventListener('click', () =>{
+    if(Notification.permission === 'granted'){
+        const notificacion = new Notification('Esta es la notificacion de SubSphere.',{
+            icon: "../../img/dashboard/SubS.png",
+            body:"Pagina de SubSphere"
+        });
+        notificacion.onclick = function(){
+            window.open('http://127.0.0.1:5501/src/index.html')
+        }
     }
-}
+})
+
+
+
+/////
+
+
+
+
+// const accountSid = "USa4393d104651d2dddc3001cf4663ad0e";
+// const authToken = "AC653292a0d19e8df093555ae76010d266";
+// const client = require('twilio')(accountSid, authToken);
+
+// client.messages
+//       .create({from: '+15557122661', body: 'no olvides pagar tu suscripcion', to: '+573218741020'})
+//       .then(message => console.log(message.sid));
+
+

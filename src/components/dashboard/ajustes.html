@@ -59,6 +59,7 @@
             </ul>
         </div>
     </nav>
+
     <section class="dashboard">
         <div class="top">
             <i id="rotated" class="arrow uil-angle-left sidebar-toggle"></i>
@@ -67,7 +68,7 @@
 
         <div class="container">
             <div class="container-ajustes">
-                <h3>Ajustes</h3>
+                <h3 class="ajustes">Ajustes</h3>
                 <hr>
                 <h3 class="idiomaTitulo">Idioma</h3>
                 <select class="idioma" name="" id="">
@@ -78,36 +79,48 @@
                 <details class="monedaTotal">
                     <summary>Moneda</summary>
                     <p>Puedes seleccionar la moneda en la que pagaras la suscripcion.</p>
-                    <select class="moneda2">
-                        <option value="">Dollars / peso $ </option>
-                        <option value="">Euro €</option>
-                        <option value="">Yen / Yuan ¥ </option>
+                    <label for="frecuencia"></label>
+                    <select class="DEY" id="frecuencia" required>
+                        <option value="Semanal">Dollar / peso $</option>
+                        <option value="Mensual">Euro €</option>
+                        <option value="Anual">Yen / Yuan ¥  </option>
                     </select>
+                 
                 </details>
+                <!-- <div class="form-group">
+                    <label for="frecuencia">Frecuencia de pago:</label>
+                    <select id="frecuencia" required>
+                        <option value="Semanal">Semanal</option>
+                        <option value="Mensual">Mensual</option>
+                        <option value="Anual">Anual</option>
+                    </select>
+                </div> -->
 
 
                 <div class="Notificiones">
-                    
-                    <span class="notif">Notificaciones</span>
-                    <div class="mode-toggleNoti">
-                        <span class="switcher"></span>
-                    </div>
-                    <!-- <div class="notificar">
-                        <i class="uil uil-toggle-off"></i>
-                    </div> -->
 
-                    <!-- <span class="switch">
-                            <input type="checkbox" id="switcher">
-                            <label for="switcher"></label>
-                        </span>
-                     -->
-                    <!-- <button id="notificationButton" onclick="toggleNotification()" i class="uil uil-toggle-off"></i> -->
+                    <span class="notif">Notificaciones</span>
+                    <div class="activar">
+                        <button class="bAct" id="notificar">
+                            Activar
+                        </button>
+                        <button class="bAct" id="ver" class="verNotificacion">
+                            Ver Notific
+                        </button>
+                    </div>
+                    <!-- <div class="mode-toggleNoti">
+                        <span class="switcher"></span>
+                    </div> -->
                 </div>
 
+                <div class="Visitanos">
+                    <a class="VyM" href="http://google.com">Acerca de</a>
+                </div>
+                <!-- 
                 <details class="Visitanos">
-                    <summary>Acerca de</summary>
-                    <a class="VyM" href="#" ></a>
-                </details>
+                   
+                    
+                </details> -->
             </div>
 
         </div>
