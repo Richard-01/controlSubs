@@ -53,7 +53,7 @@
         {
           "plataforma": "Rappi",
           "frecuencia": "Mensual",
-          "precio": 45.10
+          "precio": 45.1
         },
         {
           "plataforma": "Twitch",
@@ -73,11 +73,31 @@
         {
           "plataforma": "Prime video",
           "frecuencia": "Anual",
-          "precio": 100.00
+          "precio": 100
         }
       ],
       "plan": "plus",
       "id": "5e52"
+    },
+    {
+      "nombre": "Teo",
+      "correo": "teo@gmail.com",
+      "contrasena": "teo12345",
+      "telefono": 2122122233,
+      "subs": [
+        {
+          "plataforma": "Netfix",
+          "frecuencia": "Anual",
+          "precio": "$1,000.00"
+        },
+        {
+          "plataforma": "Twitch",
+          "frecuencia": "Semanal",
+          "precio": "$10.00"
+        }
+      ],
+      "plan": "premiun",
+      "id": "c144"
     }
   ],
   "plataformas": [

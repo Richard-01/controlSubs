@@ -99,6 +99,7 @@ const getSuscriptions = async () => {
 getSuscriptions();
 
 salir.addEventListener("click", () => {
+    window.location = "index.html";
     localStorage.removeItem("id");
     localStorage.removeItem("status");
     localStorage.removeItem("mode");
