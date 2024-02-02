@@ -49,7 +49,33 @@
       "correo": "Richard@gmail.com",
       "contrasena": "Richard.mb00",
       "telefono": 3145554738,
-      "subs": 0,
+      "subs": [
+        {
+          "plataforma": "Rappi",
+          "frecuencia": "Mensual",
+          "precio": 45.10
+        },
+        {
+          "plataforma": "Twitch",
+          "frecuencia": "Mensual",
+          "precio": 4.99
+        },
+        {
+          "plataforma": "Netflix",
+          "frecuencia": "Mensual",
+          "precio": 12.01
+        },
+        {
+          "plataforma": "Spotify",
+          "frecuencia": "Semanal",
+          "precio": 45.99
+        },
+        {
+          "plataforma": "Prime video",
+          "frecuencia": "Anual",
+          "precio": 100.00
+        }
+      ],
       "plan": "plus",
       "id": "5e52"
     }
