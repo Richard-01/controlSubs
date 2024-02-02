@@ -61,15 +61,13 @@ const addSubscription = async () => {
         const frecuenciaSelect = document.getElementById('frecuencia');
         const frecuencia = frecuenciaSelect.options[frecuenciaSelect.selectedIndex].value;
         const precio = parseFloat(document.getElementById('precio').value);
-
-        //const fecha = new Date().toISOString();
-        const precioFormateado = precio.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
+        const fecha = new Date().toISOString();
 
         const subscriptionData = {
             plataforma,
             frecuencia,
-            precio: precioFormateado,
-            //fecha
+            precio,
+            fecha,
         };
 
         if (!plataforma || !frecuencia || !precio || isNaN(parseFloat(precio))) {

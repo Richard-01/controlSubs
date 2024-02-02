@@ -86,7 +86,7 @@
       "telefono": 2122122233,
       "subs": [
         {
-          "plataforma": "Netfix",
+          "plataforma": "Netflix",
           "frecuencia": "Anual",
           "precio": "$1,000.00"
         },
@@ -94,10 +94,71 @@
           "plataforma": "Twitch",
           "frecuencia": "Semanal",
           "precio": "$10.00"
+        },
+        {
+          "plataforma": "Spotify",
+          "frecuencia": "Anual",
+          "precio": "$12.99"
         }
       ],
       "plan": "premiun",
       "id": "c144"
+    },
+    {
+      "nombre": "richard",
+      "correo": "richard.montoya@gmail.com",
+      "contrasena": "Richard.mb00",
+      "telefono": 3145547388,
+      "subs": [
+        {
+          "plataforma": "Netflix",
+          "frecuencia": "Semanal",
+          "precio": 12
+        },
+        {
+          "plataforma": "Spotify",
+          "frecuencia": "Anual",
+          "precio": 99
+        },
+        {
+          "plataforma": "Youtube",
+          "frecuencia": "Mensual",
+          "precio": "$58.03"
+        },
+        {
+          "plataforma": "Youtube",
+          "frecuencia": "Anual",
+          "precio": 58.05
+        }
+      ],
+      "plan": "plus",
+      "id": "fbb3"
+    },
+    {
+      "nombre": "richard",
+      "correo": "richard@gmail.com",
+      "contrasena": "12345",
+      "telefono": 3145547388,
+      "subs": [
+        {
+          "plataforma": "Netflix",
+          "frecuencia": "Anual",
+          "precio": 12.88
+        },
+        {
+          "plataforma": "Youtube",
+          "frecuencia": "Anual",
+          "precio": 180.66
+        },
+        {
+          "plataforma": "Twitch",
+          "frecuencia": "Anual",
+          "precio": 200.02,
+          "fecha": "2024-02-02T16:34:09.051Z"
+        }
+      ],
+      "plan": "plus",
+      "id": "5afc"
     }
   ],
   "plataformas": [

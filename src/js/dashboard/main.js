@@ -60,10 +60,10 @@ const getSuscriptions = async () => {
                 if ( json[i].nombre === e.plataforma ) {
                     subsActivas += 1;
                     const contSubs = document.getElementById("contSubs");
-                    contSubs.textContent = ` ¬ ${subsActivas}`;
+                    contSubs.textContent = subsActivas;
                     gastoMensual += e.precio;
                     const contDinero = document.getElementById("contDinero");
-                    contDinero.textContent = `$ ${gastoMensual.toFixed(2)}`;
+                    contDinero.textContent = `$ ${gastoMensual}`;
                     const elemento = document.createRange().createContextualFragment(`
                     <details name="info">
                         <summary>
