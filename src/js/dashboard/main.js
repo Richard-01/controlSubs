@@ -60,10 +60,10 @@ const getSuscriptions = async () => {
                 if ( json[i].nombre === e.plataforma ) {
                     subsActivas += 1;
                     const contSubs = document.getElementById("contSubs");
-                    contSubs.textContent = subsActivas;
+                    contSubs.textContent = ` ¬ ${subsActivas}`;
                     gastoMensual += e.precio;
                     const contDinero = document.getElementById("contDinero");
-                    contDinero.textContent = gastoMensual;
+                    contDinero.textContent = `$ ${gastoMensual.toFixed(2)}`;
                     const elemento = document.createRange().createContextualFragment(`
                     <details name="info">
                         <summary>
@@ -72,7 +72,7 @@ const getSuscriptions = async () => {
                             </div>
                             <div class="cont-txt">
                                 <h3>${e. plataforma}</h3>
-                                <h4>$ ${e.precio} / ${e.pago}</h4>
+                                <h4>$ ${e.precio} / ${e.frecuencia}</h4>
                             </div>
                         </summary>
                         <p>Todavia te quedan 20 dias para realizar tu pago.</p>
@@ -86,6 +86,10 @@ const getSuscriptions = async () => {
                     contData.append(elemento);
                 }
             }
+            contData.style.maxHeight = "450px";
+            contData.style.overflowY = "auto";
+            contData.style.paddingTop = "130px";
+
         });
     } catch (err) {
         console.log(err);

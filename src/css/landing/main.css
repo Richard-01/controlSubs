@@ -190,10 +190,7 @@ img {
 }
 .b_color-primary {
     color: #fff;
-    background: linear-gradient( 270deg,
-        rgb(106 76 203) 0%,
-        rgb(239 77 175) 100% 
-    );
+    background: var(--morado);
     border: 1px solid #7f56d9;
 }
 .b_size-form {
