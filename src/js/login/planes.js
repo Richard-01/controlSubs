@@ -60,16 +60,6 @@ const planPlus = async () => {
         res = await fetch(`http://localhost:3000/usuarios/${localStorage.getItem("id")}`, options),
         json = await res.json();
 
-        Email.send({
-            SecureToken : "6a9bc8b2-ce0f-4b3c-a759-017a6c2158bc",
-            To : localStorage.getItem("correo"),
-            From : "alextron45@gmail.com",
-            Subject : "Prueba email otro app",
-            Body : "Esta es un prueba del correo con mensaje especifico"
-        }).then(
-          message => alert(message)
-        );
-
         localStorage.removeItem("nombre");
         localStorage.removeItem("correo");
         localStorage.removeItem("contrasena");
