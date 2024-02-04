@@ -355,7 +355,6 @@ details[open] summary::before {
 }
 
 .bar {
-  width: 50%;
   height: 100%;
   background: linear-gradient(to right, var(--morado), rgb(239 77 175));
   border-radius: 20px;

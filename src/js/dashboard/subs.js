@@ -125,3 +125,84 @@ const addSubscription = async () => {
         alert(error.message);
     }
 };
+
+//add mostrar data
+
+let user = {};
+
+const getUser = async () => {
+    try {
+        let res = await fetch(URL),
+        json = await res.json();
+
+        for (let i = 0; i < json.length; i++) {
+            if ( json[i].id == localStorage.getItem("id") ) {
+                user = {
+                    id: json[i].id,
+                    nombre: json[i].nombre,
+                    correo: json[i].correo,
+                    contrasena: json[i].contrasena,
+                    telefono: json[i].telefono,
+                    plan: json[i].plan,
+                    subs: json[i].subs
+                }
+            }
+        }
+        console.log(user);
+    } catch (error) {
+        console.log("error");
+    }
+}
+
+getUser();
+
+const addAtDashboard = async () => {
+    const contentInfo = document.getElementById("contentInfo")
+
+    if ( user.subs == 0 ) {
+        const element = document.createRange().createContextualFragment(`
+        <div class="content-Subs">
+            <div class="content-text-subs">
+                <h1>Aqui podras agregar todas tus subscripciones</h1>
+                <p></p>
+            </div>
+            <div class="content-img">
+                <img src="../../img/dashboard/Subscriber-bro.svg" alt="" srcset="">
+            </div>   
+        </div>
+        `);
+        contentInfo.append(element);
+    } else {
+        try {
+            let res = await fetch("http://localhost:3000/plataformas"),
+            json = await res.json();
+            console.log(json);
+            user.subs.forEach(e => {
+                for (let i = 0; i < json.length; i++) {
+                    //console.log(json[i]);
+                    if ( json[i].nombre === e.plataforma ) {
+                        console.log("Encontrado", e.plataforma);
+                        const element = document.createRange().createContextualFragment(`
+                        <div class="card">
+                            <h4>${json[i].nombre}</h4>
+                            <p>${e.frecuencia}</p>
+                            <div class="img-card-subs">
+                                <img src="${json[i].imagen}" alt="">
+                            </div>
+                            <div class="btns">
+                                <button style="background-color: yellow;" >Editar</button>
+                                <button style="background-color: red;" >Eliminar</button>
+                            </div>
+                        </div>
+                        `)
+                        contentInfo.append(element);
+                    }
+                }
+            })
+        } catch (error) {
+            console.log(error);
+        }
+    }
+}
+
+addAtDashboard();

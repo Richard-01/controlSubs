@@ -54,6 +54,7 @@ const getSuscriptions = async () => {
             contData.append(elem)
         }
         user.subs.forEach(e => {
+            let diasPlan
             //console.log(e);
             for (let i = 0; i < json.length; i++) {
                 //console.log(json[i]);
@@ -64,6 +65,14 @@ const getSuscriptions = async () => {
                     gastoMensual += e.precio;
                     const contDinero = document.getElementById("contDinero");
                     contDinero.textContent = `$ ${gastoMensual}`;
+                    let fechaConv = e.fecha.split('')
+                    let fechaNum1 = parseInt(fechaConv[8])
+                    let fechaNum2 = parseInt(fechaConv[9])
+                    let fechaNum = fechaNum1 + fechaNum2;
+                    if ( e.frecuencia == "Mensual" ) { diasPlan = 30};
+                    if ( e.frecuencia == "Anual" ) { diasPlan = 365};
+                    if ( e.frecuencia == "Semanal" ) { diasPlan = 7};
+                    let fechaPorcentaje = fechaNum / diasPlan;
                     const elemento = document.createRange().createContextualFragment(`
                     <details name="info">
                         <summary>
@@ -75,10 +84,10 @@ const getSuscriptions = async () => {
                                 <h4>$ ${e.precio} / ${e.frecuencia}</h4>
                             </div>
                         </summary>
-                        <p>Todavia te quedan 20 dias para realizar tu pago.</p>
+                        <p>Has usado tu plan un ${(fechaPorcentaje*100).toFixed(0)}% desde que lo adquiriste</p>
                         <div class="cont-barra"> 
                             <div class="barra">
-                                <div class="bar"></div>
+                                <div class="bar" style="width: ${(fechaPorcentaje*100).toFixed(0)}%;"></div>
                             </div> 
                         </div>
                     </details>

@@ -10,13 +10,21 @@
       "subs": [
         {
           "plataforma": "Netflix",
-          "pago": "mes",
-          "precio": 15000
+          "frecuencia": "Mensual",
+          "precio": 10,
+          "fecha": "2024-02-04T01:08:56.693Z"
         },
         {
           "plataforma": "Spotify",
-          "pago": "anual",
-          "precio": 290000
+          "frecuencia": "Anual",
+          "precio": 100,
+          "fecha": "2024-02-04T03:19:49.456Z"
+        },
+        {
+          "plataforma": "Rappi",
+          "frecuencia": "Semanal",
+          "precio": 5,
+          "fecha": "2024-02-04T03:20:11.294Z"
         }
       ]
     }
