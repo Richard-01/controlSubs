@@ -130,7 +130,8 @@ const addSubscription = async () => {
 
 let user = {};
 
-const getUser = async () => {
+const addAtDashboard = async () => {
+    const contentInfo = document.getElementById("contentInfo")
     try {
         let res = await fetch(URL),
         json = await res.json();
@@ -148,17 +149,10 @@ const getUser = async () => {
                 }
             }
         }
-        console.log(user);
     } catch (error) {
         console.log("error");
     }
-}
-
-getUser();
-
-const addAtDashboard = async () => {
-    const contentInfo = document.getElementById("contentInfo")
-
+    console.log(user);
     if ( user.subs == 0 ) {
         const element = document.createRange().createContextualFragment(`
         <div class="content-Subs">
@@ -200,7 +194,7 @@ const addAtDashboard = async () => {
                 }
             })
         } catch (error) {
-            console.log(error);
+            console.log("error");
         }
     }
 }

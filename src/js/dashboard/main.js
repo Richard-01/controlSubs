@@ -4,7 +4,11 @@ const d = document,
 
 if ( !localStorage.getItem("id") ) {
     window.location = "../../index.html";
-}    
+}  
+
+document.addEventListener("DOMContentLoad",(event) => {
+    event.preventDefault();
+})
 
 let user = {}
 
@@ -97,7 +101,7 @@ const getSuscriptions = async () => {
             }
             contData.style.maxHeight = "450px";
             contData.style.overflowY = "auto";
-            contData.style.paddingTop = "130px";
+            contData.style.paddingTop = "200px";
 
         });
     } catch (err) {

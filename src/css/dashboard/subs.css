@@ -176,6 +176,7 @@ input {
   border-radius: 10px;
   border: 2px solid rgb(102, 102, 102);
   box-shadow: 0 0 10px rgb(150, 150, 150);
+  color: var(--text-color);
 }
 
 .img-card-subs {
@@ -200,14 +201,24 @@ input {
 }
 
 .btns button {
-  padding: 5px;
+  padding: 10px;
   border-radius: 10px;
   font-weight: bold;
   cursor: pointer;
   transition: all 300ms;
   border: none;
+  font-size: 1rem;
 }
 
 .btns button:hover {
   box-shadow: 0 0 15px black;
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    width: auto;
+  }
+  .dashboard-content-subs {
+    margin-bottom: 100px;
+  }
 }
