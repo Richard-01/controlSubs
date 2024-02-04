@@ -1,3 +1,16 @@
+const d = document,
+    tituloName = d.getElementById('titulo-name'),
+    salir = d.getElementById('salir');
+
+if ( !localStorage.getItem("id") ) {
+    window.location = "../../index.html";
+}  
+
+document.addEventListener("DOMContentLoad",(event) => {
+    event.preventDefault();
+})
+
+
 const modal = document.getElementById('myModal');
 const modalOverlay = document.getElementById('modalOverlay');
 const btn = document.getElementById('btn');
@@ -157,7 +170,7 @@ const addAtDashboard = async () => {
         const element = document.createRange().createContextualFragment(`
         <div class="content-Subs">
             <div class="content-text-subs">
-                <h1>Aqui podras agregar todas tus subscripciones</h1>
+                <h1>Aqui podras agregar tus subscripciones</h1>
                 <p></p>
             </div>
             <div class="content-img">
@@ -184,8 +197,7 @@ const addAtDashboard = async () => {
                                 <img src="${json[i].imagen}" alt="">
                             </div>
                             <div class="btns">
-                                <button style="background-color: yellow;" >Editar</button>
-                                <button style="background-color: red;" >Eliminar</button>
+                                <button onclick=eliminarSub("${e.plataforma}") style="background-color: red;" >Eliminar</button>
                             </div>
                         </div>
                         `)
@@ -200,3 +212,12 @@ const addAtDashboard = async () => {
 }
 
 addAtDashboard();
+
+
+salir.addEventListener("click", () => {
+    window.location = "index.html";
+    localStorage.removeItem("id");
+    localStorage.removeItem("status");
+    localStorage.removeItem("mode");
+    window.location.reload();
+})

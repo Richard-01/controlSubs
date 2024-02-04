@@ -47,7 +47,7 @@
           "fecha": "2024-02-01T15:55:19.754Z"
         },
         {
-          "plataforma": "HBO max",
+          "plataforma": "HBOmax",
           "frecuencia": "Mensual",
           "precio": 12,
           "fecha": "2024-02-04T15:58:49.650Z"
@@ -55,6 +55,15 @@
       ],
       "plan": "free",
       "id": "5030"
+    },
+    {
+      "nombre": "Alexander",
+      "correo": "alex@gmail.com",
+      "contrasena": "alex123",
+      "telefono": 3012122211,
+      "subs": 0,
+      "plan": "premiun",
+      "id": "8415"
     }
   ],
   "plataformas": [
@@ -90,7 +99,7 @@
     },
     {
       "id": "7",
-      "nombre": "HBO max",
+      "nombre": "HBOmax",
       "imagen": "../../img/icons/hbo.svg"
     }
   ]

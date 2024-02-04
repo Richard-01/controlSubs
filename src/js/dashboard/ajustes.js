@@ -1,3 +1,15 @@
+const d = document,
+    tituloName = d.getElementById('titulo-name'),
+    salir = d.getElementById('salir');
+
+if ( !localStorage.getItem("id") ) {
+    window.location = "../../index.html";
+}  
+
+document.addEventListener("DOMContentLoad",(event) => {
+    event.preventDefault();
+})
+
 const notificarBtn = document.querySelector('#notificar')
 
 notificarBtn.addEventListener('click',()=>{
@@ -37,3 +49,11 @@ VerNotificacion.addEventListener('click', () =>{
 //       .then(message => console.log(message.sid));
 
 
+
+salir.addEventListener("click", () => {
+    window.location = "index.html";
+    localStorage.removeItem("id");
+    localStorage.removeItem("status");
+    localStorage.removeItem("mode");
+    window.location.reload();
+})
