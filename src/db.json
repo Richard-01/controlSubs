@@ -1,106 +1,27 @@
 {
   "usuarios": [
     {
-      "nombre": "alex",
-      "correo": "alex@saasas",
-      "contrasena": "dsadsad",
-      "telefono": 1221211212,
-      "plan": "premiun",
-      "id": "7ccc",
-      "subs": [
-        {
-          "plataforma": "Netflix",
-          "frecuencia": "Mensual",
-          "precio": 10,
-          "fecha": "2024-02-04T01:08:56.693Z"
-        },
-        {
-          "plataforma": "Spotify",
-          "frecuencia": "Anual",
-          "precio": 100,
-          "fecha": "2024-02-04T03:19:49.456Z"
-        },
-        {
-          "plataforma": "Rappi",
-          "frecuencia": "Semanal",
-          "precio": 5,
-          "fecha": "2024-02-04T03:20:11.294Z"
-        },
-        {
-          "plataforma": "Twitch",
-          "frecuencia": "Mensual",
-          "precio": 89,
-          "fecha": "2024-02-04T15:35:15.182Z"
-        }
-      ]
-    },
-    {
-      "nombre": "Luna",
-      "correo": "luna@gmail.com",
-      "contrasena": "luna12345",
-      "telefono": 3122123443,
+      "nombre": "angela",
+      "correo": "mailet2997@gmail.com",
+      "contrasena": "angela123",
+      "telefono": 3143071152,
       "subs": [
         {
           "plataforma": "Netflix",
           "frecuencia": "Semanal",
-          "precio": 6,
-          "fecha": "2024-02-01T15:55:19.754Z"
+          "precio": 500,
+          "fecha": "2024-02-05T11:57:20.022Z"
         },
         {
-          "plataforma": "HBOmax",
+          "plataforma": "Netflix",
           "frecuencia": "Mensual",
           "precio": 12,
-          "fecha": "2024-02-04T15:58:49.650Z"
+          "fecha": "2024-02-05T11:58:12.355Z"
         }
       ],
-      "plan": "free",
-      "id": "5030"
-    },
-    {
-      "nombre": "Alexander",
-      "correo": "alex@gmail.com",
-      "contrasena": "alex123",
-      "telefono": 3012122211,
-      "subs": 0,
-      "plan": "premiun",
-      "id": "8415"
+      "plan": "plus",
+      "id": "2588"
     }
   ],
-  "plataformas": [
-    {
-      "id": "1",
-      "nombre": "Netflix",
-      "imagen": "../../img/icons/netflix.png"
-    },
-    {
-      "id": "2",
-      "nombre": "Spotify",
-      "imagen": "../../img/icons/spotify.png"
-    },
-    {
-      "id": "3",
-      "nombre": "Youtube",
-      "imagen": "../../img/icons/youtube.png"
-    },
-    {
-      "id": "4",
-      "nombre": "Prime video",
-      "imagen": "../../img/icons/prime.png"
-    },
-    {
-      "id": "5",
-      "nombre": "Rappi",
-      "imagen": "../../img/icons/rappi.png"
-    },
-    {
-      "id": "6",
-      "nombre": "Twitch",
-      "imagen": "../../img/icons/twitch.png"
-    },
-    {
-      "id": "7",
-      "nombre": "HBOmax",
-      "imagen": "../../img/icons/hbo.svg"
-    }
-  ]
+  "plataformas": []
 }
