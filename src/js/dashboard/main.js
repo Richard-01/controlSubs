@@ -73,10 +73,15 @@ const getSuscriptions = async () => {
                     let fechaNum1 = parseInt(fechaConv[8])
                     let fechaNum2 = parseInt(fechaConv[9])
                     let fechaNum = fechaNum1 + fechaNum2;
-                    if ( e.frecuencia == "Mensual" ) { diasPlan = 30};
-                    if ( e.frecuencia == "Anual" ) { diasPlan = 365};
-                    if ( e.frecuencia == "Semanal" ) { diasPlan = 7};
-                    let fechaPorcentaje = fechaNum / diasPlan;
+                    
+                    if ( e.frecuencia == "Anual" ) { 
+                        fechaNum = "un año"
+                    };
+                    if ( e.frecuencia == "Semanal" ) { 
+                        fechaNum += 7
+                    };
+                    console.log(fechaNum);
+                    console.log();
                     const elemento = document.createRange().createContextualFragment(`
                     <details name="info">
                         <summary>
@@ -88,12 +93,8 @@ const getSuscriptions = async () => {
                                 <h4>$ ${e.precio} / ${e.frecuencia}</h4>
                             </div>
                         </summary>
-                        <p>Has usado tu plan un ${(fechaPorcentaje*100).toFixed(0)}% desde que lo adquiriste</p>
-                        <div class="cont-barra"> 
-                            <div class="barra">
-                                <div class="bar" style="width: ${(fechaPorcentaje*100).toFixed(0)}%;"></div>
-                            </div> 
-                        </div>
+                        <p>Tu plan vence el ${fechaNum}</p>
+                        
                     </details>
                     `);
                     contData.append(elemento);

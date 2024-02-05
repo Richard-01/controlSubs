@@ -190,7 +190,7 @@ const addAtDashboard = async () => {
                     if ( json[i].nombre === e.plataforma ) {
                         console.log("Encontrado", e.plataforma);
                         const element = document.createRange().createContextualFragment(`
-                        <div class="card">
+                        <div class="card" id="cardOculto">
                             <h4>${json[i].nombre}</h4>
                             <p>${e.frecuencia}</p>
                             <div class="img-card-subs">

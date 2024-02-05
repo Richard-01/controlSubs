@@ -1,7 +1,4 @@
 const d = document,
-    cardUno = d.getElementById('cardUno'),
-    cardDos = d.getElementById('cardDos'),
-    cardTres = d.getElementById('cardTres'),
     free = d.getElementById('free'),
     plus = d.getElementById('plus'),
     premiun = d.getElementById('premiun');
@@ -11,12 +8,19 @@ if ( !localStorage.getItem("id") ) {
 }  
 
 function pruevaCorreo() {
+
+    let eBody = `
+    <h1>Bienvenido a SubSphere</h1>
+    <p>Para nosotrso es un gusto tenerte aqui</p>
+    <img src="https://i.blogs.es/0ca9a6/aa/1366_2000.jpeg" alt="">
+    `;
+
     Email.send({
         SecureToken : "6a9bc8b2-ce0f-4b3c-a759-017a6c2158bc",
-        To : "alextron45@gmail.com",
+        To : `${localStorage.getItem("correo")}`,
         From : "alextron45@gmail.com",
         Subject : "Prueba email otro app",
-        Body : "Esta es un prueba del correo con mensaje especifico"
+        Body : eBody
     }).then(
       message => alert(message)
     );
@@ -114,12 +118,15 @@ const planPremiun = async () => {
 
 
 
-cardUno.addEventListener("click", planFree);
-free.addEventListener("click", planFree);
-// cardDos.addEventListener("click", pruevaCorreo);
-plus.addEventListener("click", function (event) {
+free.addEventListener("click", (e) => {
     pruevaCorreo()
-    planPlus()
+    setTimeout(planFree, 3000);
 });
-cardTres.addEventListener("click", planPremiun);
-premiun.addEventListener("click", planPremiun);
+plus.addEventListener("click", (e) => {
+    pruevaCorreo()
+    setTimeout(planPlus, 3000);
+});
+premiun.addEventListener("click", (e) => {
+    pruevaCorreo()
+    setTimeout(planPremiun, 3000);
+});
