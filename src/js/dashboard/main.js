@@ -15,7 +15,7 @@ let user = {}
 const URL = "http://localhost:3000/usuarios/";
 const URLSUBS = "http://localhost:3000/plataformas";
 
-const getAll = async () => {
+const getSuscriptions = async () => {
     try {
         let res = await fetch(URL),
         json = await res.json();
@@ -39,11 +39,6 @@ const getAll = async () => {
     } catch (error) {
         console.log(error);
     }
-}
-
-getAll();
-
-const getSuscriptions = async () => {
     const contData = document.getElementById("contData");
     let subsActivas = 0;
     let gastoMensual = 0;
