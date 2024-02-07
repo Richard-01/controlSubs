@@ -2,6 +2,8 @@ const d = document,
 redirUno = d.getElementById('redir-uno'),
 redirDos = d.getElementById('redir-dos'),
 redirTres = d.getElementById('redir-tres')
+
+// rediccionar el usuario al login
 redirUno.addEventListener('click', () => {
     window.location = "./components/login/index.html";
 })
@@ -14,6 +16,7 @@ redirTres.addEventListener('click', () => {
 
 const btnUp = d.getElementById('up');
 
+//Se desplaza a la parte superior de la página cuando se pulsa el botón "up"
 window.addEventListener('scroll',(e)=>{
     let y = d.documentElement.scrollTop;
     if (y <= 0) {
