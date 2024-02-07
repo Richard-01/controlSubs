@@ -28,6 +28,10 @@ Una aplicación web para gestionar suscripciones de entretenimiento de manera ef
     - **Navega al directorio del proyecto:**
 
         **```cd controlSubs/src```**
+    
+    - **Descargar node globalmente en el pc para poder aceder a json-server:**
+
+        **```npm i -g node```**
 
     - **Ejecuta un servidor local:**
 
