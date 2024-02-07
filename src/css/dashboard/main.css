@@ -452,5 +452,8 @@ details[open] summary::before {
   .cont-img {
     max-width: 50%;
   }
+  .cont-data {
+    height: 10vh;
+  }
 
 }

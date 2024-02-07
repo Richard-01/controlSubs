@@ -1,13 +1,20 @@
 {
   "usuarios": [
     {
-      "nombre": "Alexander",
-      "correo": "alextron45@gmail.com",
+      "nombre": "esteban",
+      "correo": "william271629@gmail.com",
       "contrasena": "77889910",
-      "telefono": 3015656999,
-      "subs": 0,
-      "plan": "premiun",
-      "id": "58ab"
+      "telefono": 3218741020,
+      "subs": [
+        {
+          "plataforma": "Netflix",
+          "frecuencia": "Semanal",
+          "precio": 12.99,
+          "fecha": "2024-02-07T15:23:41.046Z"
+        }
+      ],
+      "plan": "plus",
+      "id": "8a13"
     }
   ],
   "plataformas": [
