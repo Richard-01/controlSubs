@@ -2,7 +2,7 @@ const body = document.querySelector('body'),
     modeToggle = body.querySelector('.mode-toggle');
     sidebar = body.querySelector('nav');
     sidebarToggle = body.querySelector('.sidebar-toggle');
-    const arrowRotated = document.getElementById('rotated');
+const arrowRotated = document.getElementById('rotated');
 
 let getMode = localStorage.getItem('mode');
 if (getMode && getMode === 'dark') {
@@ -15,6 +15,7 @@ if (getStatus && getStatus === 'close') {
     arrowRotated.classList.add('rotated-element');
 }
 
+//Activar y desactivar el modo oscuro
 modeToggle.addEventListener('click', () => {
     body.classList.toggle('dark');
     if (body.classList.contains('dark')) {
@@ -24,6 +25,7 @@ modeToggle.addEventListener('click', () => {
     }
 });
 
+//se utiliza para abrir y cerrar el sidebar
 sidebarToggle.addEventListener('click', () => {
     sidebar.classList.toggle('close');
     if (sidebar.classList.contains('close')) {

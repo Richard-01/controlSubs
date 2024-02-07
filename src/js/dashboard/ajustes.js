@@ -34,22 +34,6 @@ VerNotificacion.addEventListener('click', () =>{
 })
 
 
-
-/////
-
-
-
-
-// const accountSid = "USa4393d104651d2dddc3001cf4663ad0e";
-// const authToken = "AC653292a0d19e8df093555ae76010d266";
-// const client = require('twilio')(accountSid, authToken);
-
-// client.messages
-//       .create({from: '+15557122661', body: 'no olvides pagar tu suscripcion', to: '+573218741020'})
-//       .then(message => console.log(message.sid));
-
-
-
 salir.addEventListener("click", () => {
     window.location = "index.html";
     localStorage.removeItem("id");

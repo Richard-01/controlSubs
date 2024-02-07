@@ -28,6 +28,7 @@ let userId = "";
 
 const URL = "http://localhost:3000/usuarios/";
 
+// identifica el usuario especifico 
 const getAll = async () => {
     try {
         let res = await fetch(URL),
@@ -55,6 +56,7 @@ const getAll = async () => {
     }
 };
 
+// segun el tipo de plan permite agregar las plataformas
 const getMaxSubsAllowed = (plan) => {
     switch (plan.toLowerCase()) {
         case 'plus':
@@ -68,6 +70,7 @@ const getMaxSubsAllowed = (plan) => {
     }
 };
 
+// Agrega la subscripcion al usuario especifico
 const addSubscription = async () => {
     try {
         const plataforma = document.getElementById('plataforma').value;
@@ -139,7 +142,7 @@ const addSubscription = async () => {
     }
 };
 
-//add mostrar data
+//hace visible el contenido del json en el main
 
 let user = {};
 
@@ -213,7 +216,7 @@ const addAtDashboard = async () => {
 
 addAtDashboard();
 
-
+// Salir de la session
 salir.addEventListener("click", () => {
     window.location = "index.html";
     localStorage.removeItem("id");

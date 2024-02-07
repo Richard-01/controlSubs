@@ -1,27 +1,36 @@
+//Traemos variables que utilizaremos del HTML
 const d = document,
     tituloName = d.getElementById('titulo-name'),
     salir = d.getElementById('salir');
 
+//Comprobamos si el usuario esta registrado y tiene ID, si no redireccionamos al comienzo
 if ( !localStorage.getItem("id") ) {
     window.location = "../../index.html";
 }  
 
+//Prevent para prevenir errores
 document.addEventListener("DOMContentLoad",(event) => {
     event.preventDefault();
 })
 
+//Variarble para luego llenarla con el usuario
 let user = {}
 
+//URL de ambas tablas 
 const URL = "http://localhost:3000/usuarios/";
 const URLSUBS = "http://localhost:3000/plataformas";
 
+//Creamos la funcion que va a hacer todo
 const getSuscriptions = async () => {
     try {
+        //variables del fetch
         let res = await fetch(URL),
         json = await res.json();
 
+        //Recorremos el array para traer datos del usuario
         for (let i = 0; i < json.length; i++) {
             if ( json[i].id == localStorage.getItem("id") ) {
+                //Rellenamos el usuario segun el id del localStorage
                 user = {
                     id: json[i].id,
                     nombre: json[i].nombre,
@@ -34,17 +43,21 @@ const getSuscriptions = async () => {
             }
         }
 
+        //Mostramos el titulo en el dashboard
         tituloName.textContent = `Hola, ${user.nombre}!`;
 
     } catch (error) {
         console.log(error);
     }
+    //Creamos variables para darles uso luego
     const contData = document.getElementById("contData");
     let subsActivas = 0;
     let gastoMensual = 0;
     try {
+        //variables del fetch
         let res = await fetch(URLSUBS),
         json = await res.json();
+        //si el usuario no tiene suscripciones entoncens inyectamos HTML
         if (user.subs == 0) {
             const elem = document.createRange().createContextualFragment(`
             <h2 class="titulo-fin">Aun no tienes suscripciones, que esperas!</h2>
@@ -53,7 +66,6 @@ const getSuscriptions = async () => {
             contData.append(elem)
         }
         user.subs.forEach(e => {
-            let diasPlan
             //console.log(e);
             for (let i = 0; i < json.length; i++) {
                 //console.log(json[i]);
