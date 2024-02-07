@@ -1,69 +1,13 @@
 {
   "usuarios": [
     {
-      "nombre": "angela",
-      "correo": "mailet2997@gmail.com",
-      "contrasena": "angela123",
-      "telefono": 3143071152,
-      "subs": [
-        {
-          "plataforma": "Netflix",
-          "frecuencia": "Semanal",
-          "precio": 500,
-          "fecha": "2024-02-05T11:57:20.022Z"
-        },
-        {
-          "plataforma": "Netflix",
-          "frecuencia": "Mensual",
-          "precio": 12,
-          "fecha": "2024-02-05T11:58:12.355Z"
-        }
-      ],
-      "plan": "plus",
-      "id": "2588"
-    },
-    {
       "nombre": "Alexander",
       "correo": "alextron45@gmail.com",
-      "contrasena": "alex12345",
+      "contrasena": "77889910",
       "telefono": 3015656999,
-      "subs": [
-        {
-          "plataforma": "Netflix",
-          "frecuencia": "Mensual",
-          "precio": 12,
-          "fecha": "2024-02-05T12:44:37.059Z"
-        },
-        {
-          "plataforma": "Spotify",
-          "frecuencia": "Mensual",
-          "precio": 12,
-          "fecha": "2024-02-05T15:41:41.409Z"
-        },
-        {
-          "plataforma": "Rappi",
-          "frecuencia": "Semanal",
-          "precio": 5,
-          "fecha": "2024-02-05T15:53:24.787Z"
-        },
-        {
-          "plataforma": "Twitch",
-          "frecuencia": "Anual",
-          "precio": 122,
-          "fecha": "2024-02-05T15:54:11.228Z"
-        }
-      ],
-      "plan": "plus",
-      "id": "6825"
-    },
-    {
-      "nombre": "richard",
-      "correo": "richard@gmail.com",
-      "contrasena": "12345",
-      "telefono": 3004445854,
       "subs": 0,
-      "plan": "plus",
-      "id": "da49"
+      "plan": "premiun",
+      "id": "58ab"
     }
   ],
   "plataformas": [
