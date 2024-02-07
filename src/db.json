@@ -55,6 +55,15 @@
       ],
       "plan": "plus",
       "id": "6825"
+    },
+    {
+      "nombre": "richard",
+      "correo": "richard@gmail.com",
+      "contrasena": "12345",
+      "telefono": 3004445854,
+      "subs": 0,
+      "plan": "plus",
+      "id": "da49"
     }
   ],
   "plataformas": [
