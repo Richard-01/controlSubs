@@ -62,7 +62,6 @@ img {
     justify-content: space-between;
 }
 .s_mockup {
-    /* width: 512px; Activar cuando se vaya a colocar el video*/
     max-width: 512px;
     position: relative;
     display: flex;
@@ -153,7 +152,18 @@ img {
     align-items: flex-end;
     justify-content: center;
 }
-
+.subs__screens-home{
+    top: 78px;
+    z-index: 3;
+    left: 16px;
+    position: absolute;
+}
+.subs__screens-suscriptions{
+    top: 14px;
+    right: 17px;
+    z-index: 4;
+    position: absolute;
+}
 .s_screens-iphone-one {
     z-index: 3;
     margin-right: -43px;
@@ -190,10 +200,7 @@ img {
 }
 .b_color-primary {
     color: #fff;
-    background: linear-gradient( 270deg,
-        rgb(106 76 203) 0%,
-        rgb(239 77 175) 100% 
-    );
+    background: var(--morado);
     border: 1px solid #7f56d9;
 }
 .b_size-form {

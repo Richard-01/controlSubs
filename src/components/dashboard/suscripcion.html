@@ -22,19 +22,19 @@
         <div class="menu-items">
             <ul class="nav-links">
                 <li>
-                    <a href="#">
+                    <a href="../dashboard/main.html">
                         <i class="uil uil-estate"></i>
                         <span class="link-name">Inicio</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="../dashboard/suscripcion.html">
                         <i class="uil uil-list-ol-alt"></i>
                         <span class="link-name">Suscripciones</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="../dashboard/ajustes.html">
                         <i class="uil uil-setting"></i>
                         <span class="link-name">Ajustes</span>
                     </a>
@@ -65,50 +65,38 @@
             <i id="rotated" class="arrow uil-angle-left sidebar-toggle"></i>
         </div>
         <div class="dashboard-content-subs">
-            <div class="overview-subs">
-                <div class="container">
-                    <img src="../../img/icons/netflix.png" class="image" />
-                    <div class="content">
-                        <div class="text">
-                            <h3>Contenido del div</h3>
-                            <p>Descripción del contenido</p>
-                        </div>
-                        <div class="icons">
-                            <i class="uil uil-edit"></i>
-                            <i class="uil uil-trash-alt"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <img src="../../img/icons/netflix.png" class="image" />
-                    <div class="content">
-                        <div class="text">
-                            <h3>Contenido del div</h3>
-                            <p>Descripción del contenido</p>
-                        </div>
-                        <div class="icons">
-                            <i class="uil uil-edit"></i>
-                            <i class="uil uil-trash-alt"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <img src="../../img/icons/netflix.png" class="image" />
-                    <div class="content">
-                        <div class="text">
-                            <h3>Contenido del div</h3>
-                            <p>Descripción del contenido</p>
-                        </div>
-                        <div class="icons">
-                            <i class="uil uil-edit"></i>
-                            <i class="uil uil-trash-alt"></i>
-                        </div>
-                    </div>
-                </div>
+            <div class="cards-subs" id="contentInfo">
             </div>
-            <button class="btn">Agregar Suscripcion</button>
+            <button class="btn" id="btn">Agregar Suscripcion</button>
+        </div>
     </section>
-    <script src="../../js/dashboard/sidebar.js" async></script>
-</body>
+    <div class="modal-overlay" id="modalOverlay"></div>
 
+    <div class="modal" id="myModal">
+        <div class="modal-header">
+            <span>Modal de Suscripción</span>
+            <span class="modal-close" onclick="closeModal()">X</span>
+        </div>
+        <form id="subscriptionForm">
+            <div class="form-group">
+                <label for="plataforma">Plataforma:</label>
+                <input type="text" id="plataforma" required>
+            </div>
+            <div class="form-group">
+                <label for="frecuencia">Frecuencia de pago:</label>
+                <select id="frecuencia" required>
+                    <option value="Semanal">Semanal</option>
+                    <option value="Mensual">Mensual</option>
+                    <option value="Anual">Anual</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="precio">Precio:</label>
+                <input type="number" step="0.01" id="precio" required>
+            </div>
+            <button class="btn" type="button" onclick="addSubscription()">Agregar</button>
+        </form>
+        <script src="../../js/dashboard/sidebar.js" async></script>
+        <script src="../../js/dashboard/subs.js" async></script>
+</body>
 </html>

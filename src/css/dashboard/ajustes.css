@@ -1,0 +1,232 @@
+* {
+    padding: 0%;
+    margin: 0%
+}
+
+@import url(../../css/style.css);
+
+
+.container {
+    height: 100%;
+    text-align: left;
+    border-radius: 7px;
+    margin: 5%;
+    border: 1px solid gray;
+}
+
+.container-ajustes {
+    padding: 5%;
+}
+
+
+h3 {
+    padding-bottom: 2%;
+    color: var(--black-light);
+}
+
+
+.Notificiones {
+    border: solid 1px gray;
+    border-radius: 7px;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2%;
+    padding: 0.5% 0.5% 1% 0.5%;
+    color: var(--black-light);
+
+}
+
+.bAct{
+    border-radius: 7px; 
+    background: #0000; 
+    color: var(--black-light);  
+}
+
+.activar{
+    margin-top: 1.5%;
+    color: var(--black-light);
+    
+}
+
+.activar button{
+    color: gray;
+    color: var(--black-light);
+   
+    
+    
+}
+
+span.notif {
+
+    margin-top: 9px;
+    padding-left: 1%;
+    font-weight: 700;
+}
+
+.notificar {
+    font-size: 40px;
+    border: 1px solid red;
+    margin-top: 0%;
+
+}
+
+
+@media(max-width:768px) {
+    .Notificiones {
+        width: auto;
+        height: auto;
+        margin-top: 10%;
+        padding:1.5% 1.5% 1.5% 1.5%;
+
+    }
+}
+
+@media(max-width:768px){
+    .notif{
+        margin-bottom: 2%;
+    }
+}
+
+
+/* idioma  */
+
+.idiomaTitulo{
+    margin-top: 2%;
+    color: var(--black-light);
+
+}
+
+@media(max-width:768px){
+    .idiomaTitulo{
+        margin-top: 25px;
+    }
+}
+
+.idioma{
+   width: 60%;
+   border-radius: 7px;
+   padding: 1.3% 1.3% 1.3% 1.3%;
+   font-weight: 700;
+   color: var(--black-light);
+   padding-left: 1%;
+   background: #0000;   
+}
+
+.moneda{
+    width: 60%;
+    border-radius: 7px;
+    padding: 1.3% 1.3% 1.3% 1.3%;
+    border: 1px ; 
+}
+
+
+details{
+    margin-top: 3%;
+    width: 60%;
+    height: 60%;
+}
+
+.monedaTotal{
+    border: 1px solid gray;
+    width: 60%;
+    color: gray;
+    padding: 0.5% 0% 0.5% 1%;
+}
+
+.DEY{
+    background: #0000;    
+}
+
+
+/* richard */
+
+#frecuencia {
+    width: 90%;
+    padding: 3px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+    margin-bottom: 2%;
+    margin-left: 5%;
+    color: gray;
+  }
+  
+
+.monedaTotal summary{
+    font-family: sans-serif;
+    color: var(--black-light);
+
+
+}
+
+.moneda2{
+   
+    background: rgb(247, 247, 247);;
+    width: 90%;
+    margin-left: 5%;
+    border: 1px solid gray;
+    margin-bottom: 2%;
+    border-radius: 3px 3px 3px 3px;
+    color: gray;   
+}
+
+
+.Visitanos {
+    border: 1px solid gray;
+    width: 60%;
+    padding: 0.5% 0% 0.5% 1%;
+    margin-top: 2%;
+    padding: 1.3% 1.3% 1.3% 1.3%;
+    font-weight: 700;
+    border-radius: 7px 7px 7px 7px;
+    
+}
+
+
+.VyM{
+    color: gray;
+    color: var(--black-light);
+    
+}
+
+summary{
+    font-family: sans-serif;
+    color: gray;
+}
+
+
+@media(max-width:768px) {
+    .monedaTotal {
+        width: auto;
+        height: auto;
+        margin-top: 10%;
+        padding:2% 2% 2% 2%;
+        
+    }
+}
+
+
+@media(max-width:768px) {
+    .idioma {
+        width: 100%;
+        height: auto;
+        margin-top: 5%;
+        padding:4% 4% 4% 4%;
+        padding-left: 2%;
+    }
+}
+
+
+@media(max-width:768px) {
+    .Visitanos {
+        width: auto;
+        height: auto;
+        margin-top: 10%;
+        border-radius: 7px;
+        padding:3.5% 3.5% 3.5% 3.5%;
+    
+    }
+}
+

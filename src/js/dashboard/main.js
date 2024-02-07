@@ -4,13 +4,20 @@ const d = document,
 
 if ( !localStorage.getItem("id") ) {
     window.location = "../../index.html";
-}    
+}  
+
+document.addEventListener("DOMContentLoad",(event) => {
+    event.preventDefault();
+})
 
 let user = {}
 
-const getAll = async () => {
+const URL = "http://localhost:3000/usuarios/";
+const URLSUBS = "http://localhost:3000/plataformas";
+
+const getSuscriptions = async () => {
     try {
-        let res = await fetch("http://localhost:3000/usuarios/"),
+        let res = await fetch(URL),
         json = await res.json();
 
         for (let i = 0; i < json.length; i++) {
@@ -21,7 +28,8 @@ const getAll = async () => {
                     correo: json[i].correo,
                     contrasena: json[i].contrasena,
                     telefono: json[i].telefono,
-                    plan: json[i].plan
+                    plan: json[i].plan,
+                    subs: json[i].subs
                 }
             }
         }
@@ -31,13 +39,76 @@ const getAll = async () => {
     } catch (error) {
         console.log(error);
     }
+    const contData = document.getElementById("contData");
+    let subsActivas = 0;
+    let gastoMensual = 0;
+    try {
+        let res = await fetch(URLSUBS),
+        json = await res.json();
+        if (user.subs == 0) {
+            const elem = document.createRange().createContextualFragment(`
+            <h2 class="titulo-fin">Aun no tienes suscripciones, que esperas!</h2>
+            <a class="btn-agg" href="suscripcion.html">Agregar suscripcion</a>
+            `)
+            contData.append(elem)
+        }
+        user.subs.forEach(e => {
+            let diasPlan
+            //console.log(e);
+            for (let i = 0; i < json.length; i++) {
+                //console.log(json[i]);
+                if ( json[i].nombre === e.plataforma ) {
+                    subsActivas += 1;
+                    const contSubs = document.getElementById("contSubs");
+                    contSubs.textContent = subsActivas;
+                    gastoMensual += e.precio;
+                    const contDinero = document.getElementById("contDinero");
+                    contDinero.textContent = `$ ${gastoMensual}`;
+                    let fechaConv = e.fecha.split('')
+                    let fechaNum1 = parseInt(fechaConv[8])
+                    let fechaNum2 = parseInt(fechaConv[9])
+                    let fechaNum = fechaNum1 + fechaNum2;
+                    
+                    if ( e.frecuencia == "Anual" ) { 
+                        fechaNum = "un año"
+                    };
+                    if ( e.frecuencia == "Semanal" ) { 
+                        fechaNum += 7
+                    };
+                    console.log(fechaNum);
+                    console.log();
+                    const elemento = document.createRange().createContextualFragment(`
+                    <details name="info">
+                        <summary>
+                            <div class="cont-img">
+                                <img src="${json[i].imagen}" alt="">
+                            </div>
+                            <div class="cont-txt">
+                                <h3>${e. plataforma}</h3>
+                                <h4>$ ${e.precio} / ${e.frecuencia}</h4>
+                            </div>
+                        </summary>
+                        <p>Tu plan vence el ${fechaNum}</p>
+                        
+                    </details>
+                    `);
+                    contData.append(elemento);
+                }
+            }
+            contData.style.maxHeight = "450px";
+            contData.style.overflowY = "auto";
+            contData.style.paddingTop = "200px";
+
+        });
+    } catch (err) {
+        console.log(err);
+    }
 }
 
-getAll();
-
-
+getSuscriptions();
 
 salir.addEventListener("click", () => {
+    window.location = "index.html";
     localStorage.removeItem("id");
     localStorage.removeItem("status");
     localStorage.removeItem("mode");

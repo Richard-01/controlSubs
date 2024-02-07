@@ -3,10 +3,28 @@ const d = document,
     plus = d.getElementById('plus'),
     premiun = d.getElementById('premiun');
 
-
 if ( !localStorage.getItem("id") ) {
-    window.location = "index.html";
-}    
+    window.location = "../../index.html";
+}  
+
+function pruevaCorreo() {
+
+    let eBody = `
+    <h1>Bienvenido a SubSphere</h1>
+    <p>Para nosotrso es un gusto tenerte aqui</p>
+    <img src="https://i.blogs.es/0ca9a6/aa/1366_2000.jpeg" alt="">
+    `;
+
+    Email.send({
+        SecureToken : "6a9bc8b2-ce0f-4b3c-a759-017a6c2158bc",
+        To : `${localStorage.getItem("correo")}`,
+        From : "alextron45@gmail.com",
+        Subject : "Prueba email otro app",
+        Body : eBody
+    }).then(
+      message => alert(message)
+    );
+}
 
 const planFree = async () => {
     try {
@@ -20,6 +38,7 @@ const planFree = async () => {
                 correo: localStorage.getItem("correo"),
                 contrasena: localStorage.getItem("contrasena"),
                 telefono: parseInt(localStorage.getItem("telefono")),
+                subs: 0,
                 plan: "free"
             })
         },
@@ -49,6 +68,7 @@ const planPlus = async () => {
                 correo: localStorage.getItem("correo"),
                 contrasena: localStorage.getItem("contrasena"),
                 telefono: parseInt(localStorage.getItem("telefono")),
+                subs: 0,
                 plan: "plus"
             })
         },
@@ -78,6 +98,7 @@ const planPremiun = async () => {
                 correo: localStorage.getItem("correo"),
                 contrasena: localStorage.getItem("contrasena"),
                 telefono: parseInt(localStorage.getItem("telefono")),
+                subs: 0,
                 plan: "premiun"
             })
         },
@@ -95,6 +116,17 @@ const planPremiun = async () => {
     }
 }
 
-free.addEventListener("click", planFree);
-plus.addEventListener("click", planPlus);
-premiun.addEventListener("click", planPremiun);
+
+
+free.addEventListener("click", (e) => {
+    pruevaCorreo()
+    setTimeout(planFree, 3000);
+});
+plus.addEventListener("click", (e) => {
+    pruevaCorreo()
+    setTimeout(planPlus, 3000);
+});
+premiun.addEventListener("click", (e) => {
+    pruevaCorreo()
+    setTimeout(planPremiun, 3000);
+});

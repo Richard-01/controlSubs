@@ -12,8 +12,6 @@ redirTres.addEventListener('click', () => {
     window.location = "./components/login/index.html";
 })
 
-
-
 const btnUp = d.getElementById('up');
 
 window.addEventListener('scroll',(e)=>{
