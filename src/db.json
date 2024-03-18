@@ -15,6 +15,28 @@
       ],
       "plan": "plus",
       "id": "8a13"
+    },
+    {
+      "nombre": "Alexander",
+      "correo": "alextron45@gmail.com",
+      "contrasena": "77889910",
+      "telefono": 3015656999,
+      "subs": [
+        {
+          "plataforma": "Netflix",
+          "frecuencia": "Mensual",
+          "precio": 12.99,
+          "fecha": "2024-02-07T16:22:58.659Z"
+        },
+        {
+          "plataforma": "Youtube",
+          "frecuencia": "Anual",
+          "precio": 100,
+          "fecha": "2024-02-07T16:23:31.317Z"
+        }
+      ],
+      "plan": "plus",
+      "id": "4e07"
     }
   ],
   "plataformas": [
